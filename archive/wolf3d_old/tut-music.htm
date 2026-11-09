@@ -1,0 +1,123 @@
+<HTML>
+<HEAD>
+<TITLE>Wolfenstein Source Code</TITLE>
+<STYLE TYPE="text/css">
+<!--
+
+a    {text-decoration: none}
+
+-->
+</STYLE>
+<STYLE>
+<!--
+
+a:hover{color:#FFFF66; text-decoration:underline;}
+
+-->
+</STYLE>
+
+<SCRIPT LANGUAGE="JavaScript"> 
+<!--hide 
+
+ function newwindow() 
+ { 
+  window.open('./files/wolfpal.gif','palettewindow','width=652,height=492,resizable=no'); 
+ } 
+//--> 
+</SCRIPT> 
+
+
+</HEAD>
+
+<BODY BGCOLOR="#880000" TEXT="#CCCCCC" LINK="#CCCC33" VLINK="#999999" ALINK="#FFFF66">
+<TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0" BACKGROUND="images/tablebkg.gif">
+  <TR ALIGN="CENTER" BACKGROUND="images/tablebkg.gif"> 
+    <TD HEIGHT="48" WIDTH="100%"><IMG SRC="images/ttl-src.gif" WIDTH="224" HEIGHT="65" ALT="Source Code"></TD>
+  </TR>
+</TABLE>
+<FONT FACE="Verdana, Arial, Helvetica, sans-serif"><BR>
+</FONT>
+<TABLE WIDTH="100%" BORDER="0">
+  <TR BGCOLOR="#CC0000"> 
+    <TD> 
+      <P><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><B><FONT FACE="Arial, Helvetica, sans-serif" SIZE="3"><IMG SRC="images/pistol2.gif" WIDTH="19" HEIGHT="11" ALIGN="BASELINE"></FONT><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">&nbsp;&nbsp;&nbsp;</FONT><FONT SIZE="2" COLOR="#FFFFFF">TUTORIAL 
+        2: Changing the Music on Each Level</FONT></B></FONT></P>
+    </TD>
+  </TR>
+</TABLE>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif">&nbsp;&nbsp;&nbsp;<B><FONT SIZE="2">Welcome 
+  back, everybody! Did you enjoy your ceiling color lesson? Did you skip it? You 
+  idiot! &lt;laughs&gt; No, it doesn't matter. Anyway, if you thought ceiling 
+  colors were easy, you'll probably laugh at how easy changing the music is. And 
+  no, you can't put new music in Wolfenstein. Unless you have another game that 
+  uses the Wolfenstein engine (and therefore the same music format), and you're 
+  damn good (I'm talking Chris Chokan good) with a hex editor. It's been done. 
+  I can't do it. Anyway, for those of you who are content with just rearranging 
+  the songs for a little variety with their new levels, this tutorial is for you. 
+  </FONT></B></FONT></P>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><B><FONT SIZE="2" COLOR="#FFFFFF">Step 
+  1.</FONT><FONT SIZE="2"><BR>
+  </FONT></B>&nbsp;&nbsp;&nbsp;<B><FONT SIZE="2">Open up your favorite text editor. 
+  (I actually use DOS Edit.)<BR>
+  <FONT COLOR="#FFFFFF">Step 2.</FONT><BR>
+  </FONT>&nbsp;&nbsp;&nbsp;<FONT SIZE="2">Open the file WL_PLAY.C from your Wolfy 
+  source code directory.<BR>
+  <FONT COLOR="#FFFFFF">Step 3.</FONT><BR>
+  </FONT>&nbsp;&nbsp;&nbsp;<FONT SIZE="2">Do a text/ASCII search for &quot;int 
+  songs&quot;, or if you haven't changed anything yet, go right down to line 105. 
+  The section is nicely commented (<I>hugely</I> commented, actually) so you'll 
+  know when you've found it.</FONT></B></FONT></P>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><B>&nbsp;&nbsp;&nbsp;<FONT SIZE="2">All 
+  right, take a gander at the list before you. You'll see a bunch of funny names 
+  like GETTHEM_MUS and SEARCHN_MUS, one for each line. And a whole lot of 'em 
+  too. In case you haven't figured it out by now (and if you haven't, must I clobber 
+  you to unfreeze your brain?), each name represents a song that will play on 
+  a game level. They're listed in sequential order, from level 1 to level 60. 
+  It's commented pretty well as to which episode you're looking at, so I don't 
+  need to explain that.<BR>
+  <BR>
+  </FONT>&nbsp;&nbsp;&nbsp;<FONT SIZE="2">If you've ever played around with Robert's 
+  Jukebox, you probably recognize the 8.3 abbreviations of the various song titles. 
+  If you don't recognize them by name, hopefully you know Wolfenstein well enough 
+  to know which song is which by what level it is assigned to play on.<BR>
+  <BR>
+  </FONT>&nbsp;&nbsp;&nbsp;<FONT SIZE="2">Here's a screenshot for you:</FONT></B></FONT></P>
+<P ALIGN="CENTER"><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><IMG SRC="images/tutorials/music-01.gif" WIDTH="641" HEIGHT="301" ALT="Source code image"></FONT></P>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><B>&nbsp;&nbsp;&nbsp;<FONT SIZE="2">So, 
+  to change the music on a level, just type a different name in its slot.</FONT></B></FONT></P>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B><FONT COLOR="#FFFFFF">Step 
+  4.<BR>
+  </FONT>&nbsp;&nbsp;&nbsp;Pick the level you want to change the music on, and 
+  put in a different song name. Be careful not to delete the comma after each 
+  name, or the compiler will throw a fit. Try HITLWLTZ_MUS...it's the Spear of 
+  Destiny copy protection music. Yes, it's actually in this game. For a <I>really</I> 
+  weird one, try VICMARCH_MUS. It's been in the game all along, but it was never 
+  used. It's sort of an upbeat, march-style alternate version of the high scores 
+  screen music. Not bad for a happy-go-lucky boss floor or secret level.<BR>
+  <FONT COLOR="#FFFFFF">Step 5.<BR>
+  </FONT>&nbsp;&nbsp;&nbsp;If you want to change the game title screen music, 
+  high scores screen music, or main menu music, then open WL_MENU.C and do a text 
+  search for &quot;_MUS&quot; (no quotes). That'll locate all music references 
+  in the file. For the intermission music, open WL_INTER.C and search for the 
+  same thing. Hmm... MENU... INTERmission...see how intuitive this is?<BR>
+  <FONT SIZE="2" COLOR="#FFFFFF">Step 6.</FONT> <BR>
+  &nbsp;&nbsp;&nbsp;Save and compile any source files you changed to your liking.<BR>
+  <FONT SIZE="2" COLOR="#FFFFFF">Step 7.</FONT> <BR>
+  &nbsp;&nbsp;&nbsp;Go try it out! What, you need me to keep telling you this? 
+  :)</B></FONT></P>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B>&nbsp;&nbsp;&nbsp;That's 
+  all there is to it. Turn up the speaker system and enjoy the groovy FM tunes 
+  for a while. When you're ready for more cool stuff, head on over to the next 
+  tutorial. </B></FONT></P>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="3"><B><BR>
+  <FONT COLOR="#FFFFFF">On to the next tutorial:</FONT> <A HREF="tut-elev.htm">Changing 
+  the Secret Elevator Back Maps</A></B></FONT></P>
+<HR>
+<P ALIGN="CENTER"><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">[ 
+  <A HREF="welcome.htm">Welcome</A> ] [ <A HREF="news.htm">News</A> ] [ <A HREF="about.htm">About 
+  the Bunker</A> ] [ <A HREF="addons.htm">Add-ons</A> ] [ <A HREF="tips.htm">Design 
+  Tips</A> ]<BR>
+  [ <A HREF="source.htm">Source Code</A> ] [ <A HREF="toten.htm">My Project </A> 
+  ] [ <A HREF="links.htm">Links</A> ]</FONT></P>
+<script src="../archive-map.js"></script><script src="../archive-shim.js"></script></body>
+</HTML>

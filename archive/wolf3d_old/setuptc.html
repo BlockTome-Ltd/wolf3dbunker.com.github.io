@@ -1,0 +1,165 @@
+<HTML>
+<HEAD>
+<TITLE>Setting up Borland TC++ 3.0</TITLE>
+
+<META NAME="keywords" CONTENT="wolfenstein, 3d, wolf3d, source, code, tutorials, utilities,
+game, add-ons, projects, design, levels, B.J. Rowan,wolfenstein, wolf3d, code, utilities, add-ons,
+design, B.J. Rowan, 3d, source, tutorials, game, projects, levels, 3d, code, game,
+design,wolfenstein, source, utilities, projects, B.J. Rowan, wolf3d, tutorials, add-ons, levels,
+wolf3d, utilities, design, 3d, tutorials, projects, source, game, levels,wolfenstein, code, add-ons,
+B.J. Rowan, code, projects, wolf3d, game, B.J. Rowan,wolfenstein, tutorials, design, 3d, utilities,
+levels, source, add-ons,wolfenstein, utilities, B.J. Rowan, source, projects, code, design, wolf3d,
+add-ons, 3d, game, tutorials, levels">
+<META NAME="description" CONTENT="A step-by-step tutorial on setting up Borland Turbo C++ 3.0 and compiling your first Wolfenstein executable.">
+
+<STYLE TYPE="text/css">
+<!--
+
+a    {text-decoration: none}
+
+-->
+</STYLE>
+<STYLE>
+<!--
+
+a:hover{color:#FFFF66; text-decoration:underline;}
+
+-->
+</STYLE>
+
+<SCRIPT LANGUAGE="JavaScript"> 
+<!--hide 
+
+ function newwindow() 
+ { 
+  window.open('./files/wolfpal.gif','palettewindow','width=652,height=492,resizable=no'); 
+ } 
+//--> 
+</SCRIPT> 
+
+
+</HEAD>
+
+<BODY BGCOLOR="#880000" TEXT="#CCCCCC" LINK="#CCCC33" VLINK="#999999" ALINK="#FFFF66">
+<TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0" BACKGROUND="images/tablebkg.gif">
+  <TR ALIGN="CENTER" BACKGROUND="images/tablebkg.gif"> 
+    <TD HEIGHT="48" WIDTH="100%"><IMG SRC="images/ttl-src.gif" WIDTH="224" HEIGHT="65" ALT="Source Code"></TD>
+  </TR>
+</TABLE>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif"> &nbsp;&nbsp;&nbsp;<B><FONT SIZE="2">If 
+  you're reading this, I'm guessing you want to learn how to set up Borland Turbo 
+  C++ 3.0 and build your own EXEs, but either you couldn't figure it out yourself 
+  or you just didn't want to bother. Well, today I wrote up a step-by-step file 
+  on how to get TC up and running and build a functioning EXE. If you follow all 
+  these steps exactly, everything should work fine. If it doesn't -- please don't 
+  come crying to me! Okay, here we go.</FONT></B></FONT></P>
+<P ALIGN="CENTER"><FONT COLOR="#FFFFFF" FACE="Verdana, Arial, Helvetica, sans-serif"><B>INSTALLING 
+  TURBO C++ 3.0 AND COMPILING THE WOLF3D SOURCE</B></FONT></P>
+<OL>
+  <LI><B><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">Download 
+    <A HREF="https://web.archive.org/web/2003/http://members.xoom.com/the_lord_b/TC.zip">TC.ZIP</A> to any directory 
+    on your system.</FONT></B></LI>
+  <LI><B><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">Create a 
+    directory on your hard drive called TC30. Whatever drive it is doesn't matter. 
+    For this example I'll be assuming you created C:\TC30.</FONT></B></LI>
+  <LI><B><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">Put TC.ZIP 
+    into the new TC30 directory.</FONT></B></LI>
+  <LI><B><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">If you have 
+    PKUNZIP for DOS, type </FONT></B><FONT FACE="Courier New, Courier, mono" SIZE="2" COLOR="#00CCCC"><B>pkunzip 
+    tc.zip -d</B></FONT><B><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">. 
+    Or, if you have Winzip, extract TC.ZIP's contents to the TC30 directory, and 
+    make <I>sure</I> you enable &quot;Use Folder Names&quot; so the original directory 
+    structure of the zipfile is kept intact upon extraction.</FONT></B></LI>
+  <LI><B><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">Open your 
+    AUTOEXEC.BAT file (it's in C:\) in a text editor.</FONT></B></LI>
+  <LI><B><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">Find the 
+    line that says </FONT></B><FONT FACE="Courier New, Courier, mono" SIZE="2" COLOR="#00CCCC"><B>SET 
+    PATH=</B></FONT><B><FONT COLOR="#00CCCC" FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"> 
+    or<FONT FACE="Courier New, Courier, mono"> PATH=</FONT></FONT><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">. 
+    Go to the end of that line. Add this: </FONT></B><FONT FACE="Courier New, Courier, mono" SIZE="2" COLOR="#00CCCC"><B>;C:\TC30\BIN;</B></FONT><B><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">. 
+    (The first </FONT></B><FONT FACE="Courier New, Courier, mono" SIZE="2" COLOR="#00CCCC"><B>;</B></FONT><B><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"> 
+    might be there already. Just make sure there's one between each directory 
+    entry.) If you have no path statement, add this line to AUTOEXEC.BAT: </FONT></B><FONT FACE="Courier New, Courier, mono" SIZE="2" COLOR="#00CCCC"><B>SET 
+    PATH=C:\TC30\BIN;%PATH%</B></FONT><B><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">. 
+    (No spaces anywhere after the </FONT></B><FONT FACE="Courier New, Courier, mono" SIZE="2" COLOR="#00CCCC"><B>=</B></FONT><B><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">.) 
+    What this does is makes it so any programs in the TC30\BIN directory can be 
+    run from any directory on the system. That directory is where all the various 
+    compiler programs are stored and if Turbo C can't get at them from wherever 
+    you're running it, it'll freak out.</FONT></B></LI>
+  <LI><B><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">Save changes 
+    to AUTOEXEC.BAT and reboot the computer.</FONT></B></LI>
+  <LI><B><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">Go to a DOS 
+    box and navigate to the directory where your Wolfenstein source code is stored. 
+    For example, C:\SOURCE\WOLF.</FONT></B></LI>
+  <LI><B><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">Type TC. 
+    If nothing happens, you messed up something, probably in step 6. If it doesn't 
+    work, type PATH and see if C:\TC30 (or whatever your TC directory is) is in 
+    the output.</FONT></B></LI>
+  <LI><B><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">If TC starts 
+    up, you should see a blue-gray screen with a menu bar on top, and a rectangular 
+    cyan window at the bottom labeled: <FONT FACE="Courier New, Courier, mono" COLOR="#FFFFFF">Project: 
+    WOLF3D</FONT>. There should be a whole bunch of files in the project window. 
+    So far, so good. But before we can compile the source, we need to change some 
+    things. </FONT></B></LI>
+  <LI><B><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">Select Options 
+    --&gt; Directories...</FONT></B></LI>
+  <LI><B><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">Change the 
+    Include and Library directories to reflect where you put the compiler. For 
+    instance, if you installed TC to C:\TC30, make the Include directory </FONT></B><FONT FACE="Courier New, Courier, mono" SIZE="2" COLOR="#00CCCC"><B>C:\TC30\INCLUDE</B></FONT><B><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"> 
+    and the Library directory </FONT></B><FONT FACE="Courier New, Courier, mono" SIZE="2" COLOR="#00CCCC"><B>C:\TC30\LIB</B></FONT><B><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">. 
+    The output directory should be </FONT></B><FONT FACE="Courier New, Courier, mono" SIZE="2" COLOR="#00CCCC"><B>OBJ</B></FONT><B><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">. 
+    This is where all the compiled .OBJ files will be placed, as well as the finished 
+    WOLF3D.EXE. It's also where you need to put the 2 pre-compiled .OBJ files 
+    from my website; more on this later.</FONT></B></LI>
+  <LI><B><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">Now scroll 
+    down in the project window (bottom of the screen) until you find SIGNON.OBJ 
+    and GAMEPAL.OBJ. Their location, as according to the project window, will 
+    be C:\SOURCE\WOLF\OBJ. If this is not the path to your source code OBJ directory, 
+    like if you installed the source to a different drive or path, you'll need 
+    to change these files. You can't edit their location in the project file, 
+    so you'll have to remove these 2 entries and insert 2 new ones. Highlight 
+    SIGNON.OBJ and press Delete (the keyboard button). Do the same with GAMEPAL.OBJ. 
+    Now press the Insert key. The &quot;Add to Project List&quot; dialog box will 
+    appear. Navigate to your source code's OBJ directory or type the full path 
+    in the name box. You will probably have to change the &quot;*.C&quot; in the 
+    name box to &quot;*.OBJ&quot; or you won't see the files you want in the list 
+    display. Once you finally find the right directory, SIGNON.OBJ and GAMEPAL.OBJ 
+    should be the only OBJ files in there. Double-click them to add them to the 
+    project window, and then click Done.</FONT></B></LI>
+  <LI><B><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">You should 
+    be ready to compile now! Select Compile --&gt; Build All to compile all C 
+    files and link them into WOLF3D.EXE automatically. Hopefully it will be a 
+    success!</FONT></B></LI>
+  <LI><B><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">If everything 
+    worked and the build was successful, you still aren't done. You have to get 
+    the files ID_CA.OBJ and ID_SD.OBJ from my website and put them in your source 
+    code OBJ directory. <A HREF="../files/tcobj.zip">Get them here.</A> This particular 
+    zipfile contains only these two .OBJ files. Since you built an EXE already, 
+    files by their names will already exist in your OBJ directory, as well as 
+    a bunch of other .OBJ files. You want to <I>overwrite</I> the existing ID_CA.OBJ 
+    and ID_SD.OBJ with the 2 files from <A HREF="../files/tcobj.zip">TCOBJ.ZIP</A>.</FONT></B></LI>
+  <LI><B><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">Now, run 
+    TC again. Select Compile --&gt; Link. Do not Build All, or the 2 properly-compiled 
+    .OBJ files you just copied in will be overwritten again with the bad ones 
+    TC generates.</FONT></B></LI>
+  <LI><B><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">Now, take 
+    the WOLF3D.EXE in your OBJ directory and see if it works! Remember to use 
+    the <A HREF="../missing.html?p=%2Fwolf3d_old%2Ffiles%2Fvgafiles.zip">VGA files</A> from my site or the graphics 
+    will look screwy.</FONT></B></LI>
+  <LI><B><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">In the future, 
+    as you make code changes, you will have to compile each file <I>one at a time</I> 
+    by highlighting it in the project window and pressing Alt+F9. When you've 
+    done that to all the files you changed, select Compile --&gt; Link. Never 
+    use Build All or you'll mess up ID_CA.OBJ and ID_SD.OBJ!</FONT></B></LI>
+  <LI><B><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">That should 
+    be it.... Good luck, and have a good time! :)</FONT></B></LI>
+</OL>
+<HR>
+<P ALIGN="CENTER"><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">[ 
+  <A HREF="welcome.html">Welcome</A> ] [ <A HREF="news.html">News</A> ] [ <A HREF="about.html">About 
+  the Bunker</A> ] [ <A HREF="addons.html">Add-ons</A> ] [ <A HREF="tips.html">Design 
+  Tips</A> ]<BR>
+  [ <A HREF="source.html">Source Code</A> ] [ <A HREF="toten.html">My Project</A> 
+  ] [ <A HREF="links.html">Links</A> ]</FONT></P>
+<script src="../archive-map.js"></script><script src="../archive-shim.js"></script></body>
+</HTML>

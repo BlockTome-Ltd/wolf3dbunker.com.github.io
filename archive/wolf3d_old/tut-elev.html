@@ -1,0 +1,118 @@
+<HTML>
+<HEAD>
+<TITLE>Wolfenstein Source Code</TITLE>
+<STYLE TYPE="text/css">
+<!--
+
+a    {text-decoration: none}
+
+-->
+</STYLE>
+<STYLE>
+<!--
+
+a:hover{color:#FFFF66; text-decoration:underline;}
+
+-->
+</STYLE>
+
+<SCRIPT LANGUAGE="JavaScript"> 
+<!--hide 
+
+ function newwindow() 
+ { 
+  window.open('./files/wolfpal.gif','palettewindow','width=652,height=492,resizable=no'); 
+ } 
+//--> 
+</SCRIPT> 
+
+
+</HEAD>
+
+<BODY BGCOLOR="#880000" TEXT="#CCCCCC" LINK="#CCCC33" VLINK="#999999" ALINK="#FFFF66">
+<TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0" BACKGROUND="images/tablebkg.gif">
+  <TR ALIGN="CENTER" BACKGROUND="images/tablebkg.gif"> 
+    <TD HEIGHT="48" WIDTH="100%"><IMG SRC="images/ttl-src.gif" WIDTH="224" HEIGHT="65" ALT="Source Code"></TD>
+  </TR>
+</TABLE>
+<FONT FACE="Verdana, Arial, Helvetica, sans-serif"><BR>
+</FONT>
+<TABLE WIDTH="100%" BORDER="0">
+  <TR BGCOLOR="#CC0000"> 
+    <TD> 
+      <P><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><B><FONT FACE="Arial, Helvetica, sans-serif" SIZE="3"><IMG SRC="images/pistol2.gif" WIDTH="19" HEIGHT="11" ALIGN="BASELINE"></FONT><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">&nbsp;&nbsp;&nbsp;</FONT><FONT SIZE="2" COLOR="#FFFFFF">TUTORIAL 
+        3: Changing the Secret Elevator Back Maps</FONT></B></FONT></P>
+    </TD>
+  </TR>
+</TABLE>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif">&nbsp;&nbsp;&nbsp;<B><FONT SIZE="2">How's 
+  this for a let-down: I picked up my first Wolfy editor, made my first Wolfy 
+  level, put in a secret elevator, and a short time later <I>discovered that the 
+  elevator returned to the wrong floor after I finished the secret level.</I> 
+  Yes, the damn elevator back maps, as they're called, are hard-coded. But now, 
+  you can change them! So do it! No one who has access to a compiler and the source 
+  code should ever again have an excuse to release a set of levels where the secret 
+  elevators are on the same floors as they've always been, because really, how 
+  &quot;secret&quot; is that? You know the drill: E1L1, E2L1, E3L7, E4L3, E5L5, 
+  E6L3. If the secret elevators aren't there, the game doesn't care -- you'll 
+  still go back to L2, L2, L8, L4, L6, and L4. Borrring. Fortunately, you can 
+  change all of that in just <I>one</I> line of code, how about that! For more 
+  complex operations, and to precisely control which level the elevator takes 
+  you to, you'll have to get into WL_INTER.C and do some more heavy modification. 
+  More on that at a later date. Hint: Study the code and do it the same way Spear 
+  of Destiny handles secret floors... (you're on your own.) Now, if you still 
+  want the secret floor to be level 10, but you just want the elevator to be somewhere 
+  different in the episode, here's what to do.</FONT></B></FONT></P>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><B><FONT SIZE="2" COLOR="#FFFFFF">Step 
+  1.</FONT><FONT SIZE="2"><BR>
+  </FONT></B>&nbsp;&nbsp;&nbsp;<B><FONT SIZE="2">Open up your favorite text editor. 
+  (I actually use DOS Edit.)<BR>
+  <FONT COLOR="#FFFFFF">Step 2.</FONT><BR>
+  </FONT>&nbsp;&nbsp;&nbsp;<FONT SIZE="2">Open the file WL_GAME.C from your Wolfy 
+  source code directory.<BR>
+  <FONT COLOR="#FFFFFF">Step 3.</FONT><BR>
+  </FONT>&nbsp;&nbsp;&nbsp;<FONT SIZE="2">Do a text/ASCII search for &quot;back 
+  maps&quot;, or if you haven't changed anything yet, go right down to line 37. 
+  The section has a huge comment in front of it that says &quot;ELEVATOR BACK 
+  MAPS - REMEMBER (-1)!!&quot;. Why does it say this? Because technically, the 
+  values here are the level numbers that you <I>return to</I> after the secret 
+  level is completed. But since in the source code the map numbers start at 0 
+  and go to 59, the programmers wanted to remind themselves to reduce the logical 
+  level number by 1 before putting it in here, so the game knows what to do. So 
+  in essence, since the secret <I>elevator</I> is always placed on the floor <I>before</I> 
+  the one you return to, you can think of these values as being the levels that 
+  the secret elevators go on in each episode. Got it?</FONT></B></FONT></P>
+<P ALIGN="LEFT"><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><B>&nbsp;&nbsp;&nbsp;<FONT SIZE="2">A 
+  courtesy shot:</FONT></B></FONT></P>
+<P ALIGN="CENTER"><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B><IMG SRC="images/tutorials/backmaps-01.gif" WIDTH="643" HEIGHT="302" ALT="Source code image"> 
+  </B></FONT></P>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><B><FONT SIZE="2" COLOR="#FFFFFF">Step 
+  4.<BR>
+  </FONT>&nbsp;&nbsp;&nbsp;<FONT SIZE="2">To change the level you should put your 
+  secret elevator on in Mapedit, just change the numbers in the braces {}. If 
+  you want the secret elevator in your new Episode 1 to be hidden somewhere on 
+  level 6, for instance, put a 6 in there instead of a 1 for the first digit. 
+  That way, you can go to the secret level and return to level 7 when you're done.<BR>
+  <FONT SIZE="2" COLOR="#FFFFFF">Step 6.</FONT> <BR>
+  &nbsp;&nbsp;&nbsp;Save and compile the file. Link it.<BR>
+  <FONT SIZE="2" COLOR="#FFFFFF">Step 7.</FONT> <BR>
+  &nbsp;&nbsp;&nbsp;Build your levels accordingly in Mapedit, and test later. 
+  </FONT></B></FONT></P>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B>&nbsp;&nbsp;&nbsp;To 
+  some of you, this is something you've wanted to do for the longest time...isn't 
+  it nice that it's so blasted easy? Okay, we are now leaving the realm of easy, 
+  so you better enjoy it while it lasts. This next tutorial is a bit more in-depth. 
+  It's also a popular mod these days. Are you ready? Here's how to add up to two 
+  more keys to your Wolfenstein game.</B></FONT></P>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="3"><B><BR>
+  <FONT COLOR="#FFFFFF">On to the next tutorial:</FONT> <A HREF="tut-keys.html">Adding 
+  New Keys and Their Status Bar Icons</A></B></FONT></P>
+<HR>
+<P ALIGN="CENTER"><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">[ 
+  <A HREF="welcome.html">Welcome</A> ] [ <A HREF="news.html">News</A> ] [ <A HREF="about.html">About 
+  the Bunker</A> ] [ <A HREF="addons.html">Add-ons</A> ] [ <A HREF="tips.html">Design 
+  Tips</A> ]<BR>
+  [ <A HREF="source.html">Source Code</A> ] [ <A HREF="toten.html">My Project 
+  </A> ] [ <A HREF="links.html">Links</A> ]</FONT></P>
+<script src="../archive-map.js"></script><script src="../archive-shim.js"></script></body>
+</HTML>

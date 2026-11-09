@@ -1,0 +1,224 @@
+<HTML>
+<HEAD>
+<SCRIPT DEFER LANGUAGE="JavaScript">
+
+<!---hide 
+
+
+
+browserName=navigator.appName;
+
+browserVer=parseInt(navigator.appVersion);
+
+
+
+  if ((browserName=="Netscape" && browserVer>=3) || (browserName=="Microsoft Internet Explorer" && browserVer>=4))
+
+    version="n3";
+
+  else
+
+    version="n2";
+
+
+
+  if (version=="n3")
+
+   {
+
+     pic1on= new Image(92,13);
+
+     pic1on.src="images/welcome-1.gif";
+
+     pic2on= new Image(66,13);
+
+     pic2on.src="images/news-1.gif";
+
+     pic3on= new Image(74,13);
+
+     pic3on.src="images/about-1.gif";  
+
+     pic4on= new Image(92,13);
+
+     pic4on.src="images/addons-1.gif";  
+
+     pic5on= new Image(122,13);
+
+     pic5on.src="images/design-1.gif";
+
+     pic6on= new Image(132,13);
+
+     pic6on.src="images/source-1.gif";  
+
+     pic7on= new Image(120,13);
+
+     pic7on.src="images/project-1.gif";  
+
+     pic8on= new Image(69,13);
+
+     pic8on.src="images/links-1.gif";
+
+
+
+
+     pic1off= new Image(92,13);
+
+     pic1off.src="images/welcome-0.gif";
+
+     pic2off= new Image(66,13);
+
+     pic2off.src="images/news-0.gif";
+
+     pic3off= new Image(74,13);
+
+     pic3off.src="images/about-0.gif";
+
+     pic4off= new Image(92,13);
+
+     pic4off.src="images/addons-0.gif";
+
+     pic5off= new Image(122,13);
+
+     pic5off.src="images/design-0.gif";
+
+     pic6off= new Image(132,15);
+
+     pic6off.src="images/source-0.gif";
+
+     pic7off= new Image(120,13);
+
+     pic7off.src="images/project-0.gif";  
+
+     pic8off= new Image(69,13);
+
+     pic8off.src="images/links-0.gif";
+
+
+
+   }
+
+
+
+function lightup(imgName)
+
+ {
+
+   if (version=="n3")
+
+    {
+
+      imgOn=eval(imgName + "on.src");
+
+      document[imgName].src= imgOn;
+
+    }
+
+ }
+
+
+
+function turnoff(imgName)
+
+ {
+
+   if (version=="n3")
+
+    {
+
+      imgOff=eval(imgName + "off.src");
+
+      document[imgName].src= imgOff;
+
+    }
+
+ }
+
+
+//---->
+
+</SCRIPT>
+
+
+<TITLE>Navigation Bar</TITLE>
+<STYLE TYPE="text/css">
+<!--
+
+a    {text-decoration: none}
+
+-->
+</STYLE>
+<STYLE>
+<!--
+
+a:hover{color:#FFFF66; text-decoration:underline;}
+
+-->
+</STYLE>
+
+</HEAD>
+
+<BODY BGCOLOR="#000000" TEXT="#CCCCCC" LINK="#CCCC33" VLINK="#777777" ALINK="#FFFF66" LEFTMARGIN="0" TOPMARGIN="0">
+<H4 ALIGN="center"><FONT FACE="Arial, Helvetica, sans-serif" SIZE="2"><B><a href="index.html" target="_top"><IMG SRC="images/ttlanim.gif" WIDTH="131" HEIGHT="129" ALT="B.J. Rowan's Wolf3D Bunker" border="0"></a></B></FONT></H4>
+<TABLE WIDTH="132" BORDER="0" CELLSPACING="2" CELLPADDING="0" ALIGN="CENTER">
+  <TR>
+    <TD><A HREF="welcome.htm" TARGET="main" onMouseOver="lightup('pic1')"
+    onMouseOut="turnoff('pic1')"><IMG SRC="images/welcome-0.gif" NAME="pic1" ALT="Welcome" WIDTH="92" HEIGHT="13" BORDER="0"></A></TD>
+  </TR>
+  <TR>
+    <TD><A HREF="news.htm" TARGET="main" onMouseOver="lightup('pic2')"
+    onMouseOut="turnoff('pic2')"><IMG SRC="images/news-0.gif" NAME="pic2" ALT="News" WIDTH="66" HEIGHT="13" BORDER="0"></A></TD>
+  </TR>
+  <TR>
+    <TD><A HREF="about.htm" TARGET="main" onMouseOver="lightup('pic3')"
+    onMouseOut="turnoff('pic3')"><IMG SRC="images/about-0.gif" NAME="pic3" ALT="About the Bunker" WIDTH="74" HEIGHT="13" BORDER="0"></A></TD>
+  </TR>
+  <TR>
+    <TD><A HREF="wolf3d_old/addons.htm" TARGET="main" onMouseOver="lightup('pic4')"
+    onMouseOut="turnoff('pic4')"><IMG SRC="images/addons-0.gif" NAME="pic4" ALT="Add-Ons" WIDTH="92" HEIGHT="13" BORDER="0"></A></TD>
+  </TR>
+  <TR>
+    <TD><A HREF="wolf3d_old/tips.htm" TARGET="main" onMouseOver="lightup('pic5')"
+    onMouseOut="turnoff('pic5')"><IMG SRC="images/design-0.gif" NAME="pic5" ALT="Level Design Tips" WIDTH="122" HEIGHT="13" BORDER="0"></A></TD>
+  </TR>
+  <TR>
+    <TD><A HREF="source.htm" TARGET="main" onMouseOver="lightup('pic6')"
+    onMouseOut="turnoff('pic6')"><IMG SRC="images/source-0.gif" NAME="pic6" ALT="Source Code" WIDTH="132" HEIGHT="13" BORDER="0"></A></TD>
+  </TR>
+  <TR>
+    <TD><A HREF="toten.htm" TARGET="main" onMouseOver="lightup('pic7')"
+    onMouseOut="turnoff('pic7')"><IMG SRC="images/project-0.gif" NAME="pic7" ALT="My Project" WIDTH="120" HEIGHT="13" BORDER="0"></A></TD>
+  </TR>
+  <TR>
+    <TD><A HREF="links.htm" TARGET="main" onMouseOver="lightup('pic8')"
+    onMouseOut="turnoff('pic8')"><IMG SRC="images/links-0.gif" NAME="pic8" ALT="Links" WIDTH="69" HEIGHT="13" BORDER="0"></A></TD>
+  </TR>
+</TABLE>
+<H4 ALIGN="center"><FONT FACE="Arial, Helvetica, sans-serif" SIZE="2"><A HREF="https://web.archive.org/web/2003/http://www.digitalriver.com/dr/v2/ec_MAIN.Entry17?SP=10007&amp;PN=5&amp;SID=965&amp;PID=20531" TARGET="_new"><IMG SRC="images/wolfnow1.gif" WIDTH="88" HEIGHT="31" ALT="Get Wolf3D NOW!" BORDER="0"></A><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="1"><BR>
+  Immediate download!</FONT></FONT></H4>
+<DIV ALIGN="CENTER"><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="1"><B><FONT COLOR="#CC0000">Visitors 
+  since 6-3-99:</FONT></B></FONT> 
+  <TABLE WIDTH="64" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+    <TR>
+      <TD><IMG SRC="images/hits.gif" WIDTH="64" HEIGHT="12"></TD>
+    </TR>
+  </TABLE>
+  <TABLE WIDTH="64" BORDER="0" CELLSPACING="0" CELLPADDING="0" BACKGROUND="images/bkgbox.gif">
+    <TR BACKGROUND="images/bkgbox.gif"> 
+      <TD> 
+        <DIV ALIGN="CENTER"> <img src="https://web.archive.org/web/2003/http://www.bjrowan.com/cgi-bin/logcnt-wolf.cgi?0" width="8" height="16"><img
+		src="https://web.archive.org/web/2003/http://www.bjrowan.com/cgi-bin/logcnt-wolf.cgi?1" width="8" height="16"><img
+		src="https://web.archive.org/web/2003/http://www.bjrowan.com/cgi-bin/logcnt-wolf.cgi?2" width="8" height="16"><img
+		src="https://web.archive.org/web/2003/http://www.bjrowan.com/cgi-bin/logcnt-wolf.cgi?3" width="8" height="16"><img
+		src="https://web.archive.org/web/2003/http://www.bjrowan.com/cgi-bin/logcnt-wolf.cgi?4" width="8" height="16"><img
+		src="https://web.archive.org/web/2003/http://www.bjrowan.com/cgi-bin/logcnt-wolf.cgi?5" width="8" height="16"> 
+        </DIV>
+      </TD>
+    </TR>
+  </TABLE>
+  <P><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="1"><B><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="1"><FONT COLOR="#999999">Last 
+    Updated 09-18-00</FONT></FONT></B></FONT><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="1" COLOR="#999999"> 
+    </FONT><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="1" COLOR="#999999"><BR>
+    View at 1024x768</FONT></P>
+  </DIV>
+<script src="archive-map.js"></script><script src="archive-shim.js"></script></body>
+</HTML>

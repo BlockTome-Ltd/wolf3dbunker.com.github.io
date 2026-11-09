@@ -1,0 +1,98 @@
+<html>
+<head>
+<title>B.J. Rowan's Wolf3D Bunker</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript" src="scripts/dhtmllib.js"></script>
+<script language="JavaScript" src="scripts/scroller.js"></script>
+
+<script language="JavaScript">
+<!--
+var myScroller1 = new Scroller(0, 0, 260, 52, 1, 8);
+myScroller1.setColors("#000000", "#ff9966", "#660000");
+myScroller1.setFont("Verdana,Arial,Helvetica", 2);
+myScroller1.addItem("<b>Welcome to B.J. Rowan's Wolfenstein bunker.</b>");
+myScroller1.addItem("<b>Work is proceeding on Project Totengraeber Phase 2.</b>");
+myScroller1.addItem("<b>Check out the new Phase 2 screenshots inside...</b>");
+
+function init()
+
+  {
+  var img;
+  var x, y;
+
+  img = getImage("placeholder");
+  x = getImagePageLeft(img);
+  y = getImagePageTop(img);
+
+  myScroller1.create();
+  myScroller1.hide();
+  myScroller1.moveTo(x, y);
+  myScroller1.setzIndex(100);
+  myScroller1.show();
+
+  }
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v3.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+
+</head>
+
+<body bgcolor="#990000" text="#CCCCCC" link="#CCCC00" vlink="#999999" alink="#FFFF66" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="init();MM_preloadImages('../splashimg/entersite-1.gif')">
+<table width="760" border="0" cellspacing="0" cellpadding="0" align="center" height="419">
+  <tr> 
+    <td colspan="2" valign="bottom" height="124" width="757"><img src="../splashimg/masthead.jpg" width="757" height="124" alt="B.J. Rowan's Wolf3D Bunker"></td>
+    <td width="3" rowspan="6" valign="top"><img src="../splashimg/rtbordertile.gif" width="3" height="418"></td>
+  </tr>
+  <tr> 
+    <td rowspan="5" valign="top"><img src="../splashimg/bjpic.jpg" width="476" height="294" alt="Image"></td>
+    <td height="166" valign="top"> 
+      <p align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>Featuring:</b><br>
+        <font color="#FF9966">Custom Mission Development<br>
+        Level Design Philosophies<br>
+        Source Code Resources<br>
+        Third-Party Add-On Missions</font></font></p>
+      <p align="left"><img name="placeholder" src="../splashimg/pixel.gif" width="1" height="1"></p>
+      </td>
+  </tr>
+  <tr>
+    <td height="22"> 
+      <div align="center"></div>
+    </td>
+  </tr>
+  <tr>
+    <td height="32">
+      <div align="center"><a href="frameset.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('entersite','','../splashimg/entersite-1.gif',1)"><img name="entersite" border="0" src="../splashimg/entersite-0.gif" width="150" height="28"></a></div>
+    </td>
+  </tr>
+  <tr>
+    <td height="32">
+      <div align="center"></div>
+    </td>
+  </tr>
+  <tr>
+    <td height="38" valign="bottom"><img src="../splashimg/copyright.gif" width="281" height="38"></td>
+  </tr>
+</table>
+<script src="../archive-map.js"></script><script src="../archive-shim.js"></script></body>
+</html>

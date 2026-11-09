@@ -1,0 +1,347 @@
+<HTML>
+<HEAD>
+<TITLE>Wolfenstein Source Code</TITLE>
+<STYLE TYPE="text/css">
+<!--
+
+a    {text-decoration: none}
+
+-->
+</STYLE>
+<STYLE>
+<!--
+
+a:hover{color:#FFFF66; text-decoration:underline;}
+
+-->
+</STYLE>
+
+<SCRIPT LANGUAGE="JavaScript"> 
+<!--hide 
+
+ function newwindow() 
+ { 
+  window.open('./files/wolfpal.gif','palettewindow','width=652,height=492,resizable=no'); 
+ } 
+//--> 
+</SCRIPT> 
+
+
+</HEAD>
+
+<BODY BGCOLOR="#880000" TEXT="#CCCCCC" LINK="#CCCC33" VLINK="#999999" ALINK="#FFFF66">
+<TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0" BACKGROUND="images/tablebkg.gif">
+  <TR ALIGN="CENTER" BACKGROUND="images/tablebkg.gif"> 
+    <TD HEIGHT="48" WIDTH="100%"><IMG SRC="images/ttl-src.gif" WIDTH="224" HEIGHT="65" ALT="Source Code"></TD>
+  </TR>
+</TABLE>
+<BR>
+<TABLE WIDTH="100%" BORDER="0">
+  <TR BGCOLOR="#CC0000"> 
+    <TD> 
+      <P><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><B><FONT FACE="Arial, Helvetica, sans-serif" SIZE="3"><IMG SRC="images/pistol2.gif" WIDTH="19" HEIGHT="11" ALIGN="BASELINE"></FONT><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">&nbsp;&nbsp;&nbsp;</FONT><FONT SIZE="2" COLOR="#FFFFFF">TUTORIAL 
+        4: Adding New Keys and Their Status Bar Icons</FONT></B></FONT></P>
+    </TD>
+  </TR>
+</TABLE>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif">&nbsp;&nbsp;&nbsp;<B><FONT SIZE="2">Keys. 
+  They provide Wolfenstein's &quot;puzzle factor&quot;. But you say silver and 
+  gold just aren't enough? Why not add another key or two to heighten the challenge? 
+  It's not that hard. You do, however, have to come up with some new key graphics 
+  (unless you actually want to try to convince the player that the secret new 
+  key is a basket or something). Apparently, a 3rd and 4th key were already set 
+  up for operation in the source code. There are even locked door tiles for them 
+  already in there! (You'll need to add them to Mapedit's MAPDATA file, and edit 
+  the OBJDATA file accordingly -- I show you how.) Luckily for you -- most of 
+  the hard work is done for you. In fact, <I>all</I> of the hard work is done 
+  for you. Making this the perfect tutorial for the novice source code hacker, 
+  on his way to bigger and better things. All right, now I want youze all to synchronize 
+  your brains to Wolfenstein. Ready? Begin!</FONT></B></FONT></P>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2" COLOR="#FFFF99"><B>DECLARING 
+  THE NEW KEY OBJECTS</B></FONT></P>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><B><FONT SIZE="2" COLOR="#FFFFFF">Step 
+  1.</FONT><FONT SIZE="2"><BR>
+  </FONT></B>&nbsp;&nbsp;&nbsp;<B><FONT SIZE="2">Open up your favorite text editor. 
+  (I actually use DOS Edit.)<BR>
+  <FONT COLOR="#FFFFFF">Step 2.</FONT><BR>
+  </FONT>&nbsp;&nbsp;&nbsp;<FONT SIZE="2">Open the file WL_ACT1.C from your Wolfy 
+  source code directory.<BR>
+  <FONT COLOR="#FFFFFF">Step 3.</FONT><BR>
+  </FONT>&nbsp;&nbsp;&nbsp;<FONT SIZE="2">Scroll down a bit until you start seeing 
+  a list of stuff that looks like {SPR_STAT_0,water1}, and a bunch of stuff like 
+  that. This is where all of Wolfenstein's static objects and bonus items (all 
+  the sprites between the wall tiles and the actors) are set up. You'll notice 
+  the solid objects have the word &quot;block&quot; inside their braces, after 
+  the SPR_STAT_# declaration. This word makes them blocking sprites. It's that 
+  easy. Okay, you there? Good, let's move on.<BR>
+  <FONT COLOR="#FFFFFF">Step 4.</FONT><BR>
+  </FONT>&nbsp;&nbsp;&nbsp;<FONT SIZE="2">Now since we can't add new objects to 
+  Wolfenstein (damn it), we need to change an existing one (or two) to be keys. 
+  The way we do this is, find a static object you don't think you'll need (like 
+  one of the piles of bones, or the stupid &quot;Aardwolf&quot; sign) and modify 
+  it. For this example, I'm going to change that ridiculous and infamous &quot;Aardwolf&quot; 
+  sign into Key #3.</FONT></B></FONT></P>
+<P ALIGN="LEFT"><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><B>&nbsp;&nbsp;&nbsp;<FONT SIZE="2">Here's 
+  what the file will look like before you've changed it:</FONT></B></FONT></P>
+<P ALIGN="CENTER"><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B><IMG SRC="images/tutorials/keys-01.gif" WIDTH="640" HEIGHT="301" ALT="Source code image"> 
+  </B></FONT></P>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><B>&nbsp;&nbsp;&nbsp;<FONT SIZE="2">All 
+  the game cares about is what's inside the braces {}, and the comma after them. 
+  Remember, &quot;//&quot; denotes a comment, and anything after them is culled 
+  out by the compiler. That stuff off to the right there is just programming notes. 
+  It can help you identify what each sprite is, however.</FONT></B></FONT></P>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><B><FONT SIZE="2" COLOR="#FFFFFF">Step 
+  5.<BR>
+  </FONT>&nbsp;&nbsp;&nbsp;<FONT SIZE="2">Okay, we're going to make the Aardwolf 
+  sign (dubbed &quot;Call Apogee&quot; in the comment) a new key. Since a key 
+  can't be a blocking sprite if we can pick it up, let's get rid of &quot;block&quot;. 
+  Go in there and erase that word.</FONT></B></FONT><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B><BR>
+  <FONT COLOR="#FFFFFF">Step 6.</FONT> <BR>
+  &nbsp;&nbsp;&nbsp;Now, between the &quot;SPR_STAT_40,&quot; and the &quot;},&quot; 
+  add this: &quot;bo_key3&quot;. (No quotes, remember.) You can also add &quot;bo_key4&quot; 
+  if you want this to be key #4. Yes, it's important to decide on one and use 
+  it. Just as the silver key can only open a silver door, Key #3 (let's call it 
+  the Bronze Key for sake of argument) can only open bronze doors. So remember 
+  whether you used bo_key3 or bo_key4. I recommend putting them both in; you can 
+  never have too many cool secret keys and stuff. PLEASE don't forget to go into 
+  the VSWAP and change the graphics! Make sure you remember which graphics to 
+  change, too...that always helps!</B></FONT></P>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif">&nbsp;&nbsp;&nbsp;<B><FONT SIZE="2">Here's 
+  what your code should look like now.</FONT></B></FONT></P>
+<P ALIGN="CENTER"><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><IMG SRC="images/tutorials/keys-02.gif" WIDTH="642" HEIGHT="301" ALT="Source code image"></FONT></P>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B><FONT COLOR="#FFFFFF">Step 
+  7.</FONT> <BR>
+  &nbsp;&nbsp;&nbsp;Add a 4th key if desired, so you have both &quot;bo_key3&quot; 
+  and &quot;bo_key4&quot; used.<BR>
+  <FONT COLOR="#FFFFFF">Step 8.</FONT> <BR>
+  &nbsp;&nbsp;&nbsp;Scroll down a bit until you get to a portion of the file where 
+  you see a bunch of lines starting with &quot;case&quot; and then some object 
+  name. Find &quot;case bo_key1:&quot; and &quot;case bo_key2:&quot;. You need 
+  to add a new line like that for each of your new keys. Just hit Enter to create 
+  a new line and type in &quot;case bo_key3:&quot; (no quotes as always), then 
+  add a second line that says &quot;case bo_key4:&quot; (assuming you added a 
+  4th key back there). It looks a lot nicer to match up the spacing of the other 
+  definitions around them, by the way. Other programmers would approve. :)<BR>
+  </B></FONT><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B><FONT COLOR="#FFFFFF">Step 
+  9.</FONT> <BR>
+  &nbsp;&nbsp;&nbsp;That's it for in here! Save the file and close it.</B></FONT></P>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2" COLOR="#FFFF99"><B>TELLING 
+  THE GAME HOW TO PICK UP YOUR NEW KEYS</B></FONT></P>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B>&nbsp;&nbsp;&nbsp;Okay, 
+  now that we have the 3rd and 4th keys defined, we need to tell the game what 
+  to do when the player picks them up. Right now it's not going to do anything. 
+  For that, we'll need to modify some code in another file.</B></FONT></P>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B><FONT COLOR="#FFFFFF">Step 
+  10.</FONT> <BR>
+  &nbsp;&nbsp;&nbsp;Open up WL_AGENT.C.<BR>
+  <FONT COLOR="#FFFFFF">Step 11.</FONT> <BR>
+  &nbsp;&nbsp;&nbsp;Do a search for &quot;bo_key1&quot; or scroll on down to around 
+  line 693 -- you'll be in the &quot;GetBonus&quot; routine.<BR>
+  <FONT COLOR="#FFFFFF">Step 12.</FONT> <BR>
+  &nbsp;&nbsp;&nbsp;This is where the game is told what to do if the player picks 
+  up the objects defined as bo_key1 and bo_key2. In other words, the gold and 
+  silver key. Since you probably want your new keys to act the same way as the 
+  original two (make the same noise, flash the screen yellow, and actually <I>give</I> 
+  you a key), you can add two simple lines in here. Under &quot;case bo_key1:&quot; 
+  and &quot;case bo_key2:&quot;, add two more lines just like you did at the end 
+  of the last file: &quot;case bo_key3:&quot; and &quot;case bo_key4:&quot;. There! 
+  Now you're all set to go!<BR>
+  <FONT COLOR="#FFFFFF">Step 13.</FONT> <BR>
+  &nbsp;&nbsp;&nbsp;Save the file. If you want to add new key icons on the status 
+  bar, don't close it yet.</B></FONT></P>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2" COLOR="#FFFF99"><B>ADDING 
+  TWO MORE KEY ICONS TO THE STATUS BAR</B></FONT></P>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B>&nbsp;&nbsp;&nbsp;It 
+  would be polite if you gave the player some kind of notion as to when they had 
+  these new keys in their possession, don't you think? It's not hard to add two 
+  new key icons to the status bar, so let's go ahead and do that. The best place, 
+  I have found, is the far right side of the status bar, to the right of the selected 
+  weapon picture, with key3 on top, and key4 on the bottom. That's how this example 
+  will be set up. You can change it to suit your own liking of course.</B></FONT></P>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B><FONT COLOR="#FFFFFF">Step 
+  14.</FONT> <BR>
+  &nbsp;&nbsp;&nbsp;With WL_AGENT.C still open, do a search for &quot;DrawKeys&quot;. 
+  It's probably around line 564 at this point.</B></FONT></P>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B>&nbsp;&nbsp;&nbsp;Now 
+  you'll see two &quot;if/else&quot; statements. Basically what the first one 
+  is saying is, &quot;If the player has the gold key, draw the gold key icon. 
+  Else, if not, draw the blank icon.&quot; Then the second one is the same thing 
+  for the silver key. You're going to add two more statements just like that, 
+  after the one for the silver key. Use your editor's copy and paste functions. 
+  CAREFUL -- don't paste it outside of the end brace } there, or things will become 
+  a mess.<BR>
+  <BR>
+  &nbsp;&nbsp;&nbsp;Here's a screen shot of the code in its default condition.</B></FONT></P>
+<P ALIGN="CENTER"><IMG SRC="images/tutorials/keyicon-01.gif" WIDTH="641" HEIGHT="301" ALT="Source code image"></P>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B><FONT COLOR="#FFFFFF">Step 
+  15.</FONT> <BR>
+  &nbsp;&nbsp;&nbsp;Copy the two &quot;if/else&quot; statements to the clipboard. 
+  Paste them directly after the 2nd one, before the end brace }. Now there should 
+  be four if/else statements.<BR>
+  <FONT COLOR="#FFFFFF">Step 16.</FONT> <BR>
+  &nbsp;&nbsp;&nbsp;Set up the icon for Key #3. In the 3rd if/else statement, 
+  change &quot;(gamestate.keys &amp; 1)&quot; to &quot;(gamestate.keys &amp; <FONT COLOR="#FFFFFF">4</FONT>)&quot;. 
+  Where it says &quot;30,4&quot; after &quot;StatusDrawPic&quot;, change it to 
+  &quot;<FONT COLOR="#FFFFFF">38</FONT>,4&quot; to move the icon over to the far 
+  right side of the status bar.<BR>
+  <FONT COLOR="#FFFFFF">Step 17.</FONT> <BR>
+  &nbsp;&nbsp;&nbsp;Set up the icon for Key #4. In the 4th if/else statement, 
+  change &quot;(gamestate.keys &amp; 2)&quot; to &quot;(gamestate.keys &amp; <FONT COLOR="#FFFFFF">8</FONT>)&quot;. 
+  Where it says &quot;30,20&quot; after &quot;StatusDrawPic&quot;, change it to 
+  &quot;<FONT COLOR="#FFFFFF">38</FONT>,20&quot; to move the icon over to the 
+  far right side of the status bar.</B></FONT></P>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B>&nbsp;&nbsp;&nbsp;Your 
+  code should now look like this:</B></FONT></P>
+<P ALIGN="CENTER"><IMG SRC="images/tutorials/keyicon-02.gif" WIDTH="641" HEIGHT="302" ALT="Source code image"></P>
+<P ALIGN="CENTER"><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B><I>(By 
+  the way, the &quot;bo_key3&quot; and &quot;bo_key4&quot; over there on the left 
+  margin are for your benefit. DON'T type that in the code.)</I></B></FONT><I><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B> 
+  </B></FONT></I></P>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B><FONT COLOR="#FFFFFF">Step 
+  18.</FONT> <BR>
+  &nbsp;&nbsp;&nbsp;Save and close WL_AGENT.C.<BR>
+  <FONT COLOR="#FFFFFF">Step 19.</FONT> <BR>
+  &nbsp;&nbsp;&nbsp;Compile WL_ACT1.C and WL_AGENT.C. Link everything up.<BR>
+  <FONT COLOR="#FFFFFF">Step 20.</FONT> <BR>
+  &nbsp;&nbsp;&nbsp;Go make sure the new EXE will run without any noticeable problems. 
+  If it doesn't, well...you gotta problem!</B></FONT></P>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2" COLOR="#FFFF99"><B>SETTING 
+  UP MAPEDIT TO USE YOUR NEW KEYS AND LOCKED DOORS</B></FONT></P>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B>&nbsp;&nbsp;&nbsp;Fortunately 
+  for you (and for me, since this tutorial is getting rather long), the locked 
+  doors for keys 3 and 4 are already in there. Isn't that loverly? In fact, newer 
+  versions of Mapedit may actually have the key 3 doors in the legend, in which 
+  case they're called something to the effect of &quot;Stuck Door E/W holo&quot; 
+  or something like that. Anyway, here's how to set up Mapedit properly so you 
+  can use your new keys, and put in doors for them to unlock.</B></FONT></P>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B><FONT COLOR="#FFFFFF">Step 
+  1.</FONT> <BR>
+  &nbsp;&nbsp;&nbsp;Open up OBJDATA.WL6 or whatever your preferred object definition 
+  file is for Mapedit.<BR>
+  <FONT COLOR="#FFFFFF">Step 2.</FONT> <BR>
+  &nbsp;&nbsp;&nbsp;Find the two objects you replaced with keys, and change them 
+  accordingly. Tips: Make their colors high-intensity (colors 9-f), so they show 
+  up better. Put them under the gold and silver keys in the list for easier access. 
+  I also recommend making the icon for them a &quot;k&quot; like the other keys 
+  are, so there's some kind of standardization. It will help you design levels 
+  quicker. And if you need help setting up this stuff, read the Mapedit documention. 
+  Warren Buss is an excellent writer.<BR>
+  <FONT COLOR="#FFFFFF">Step 3.</FONT> <BR>
+  &nbsp;&nbsp;&nbsp;Save and close OBJDATA.WL6, and open MAPDATA.WL6.<BR>
+  <FONT COLOR="#FFFFFF">Step 4.</FONT> <BR>
+  &nbsp;&nbsp;&nbsp;Okay, you're probably going to need to add at least two of 
+  the locked doors to your legend. The doors for key 3 might be in there already. 
+  Key 4 doors are almost certainly not. Here's the object hex values for the doors 
+  (the first 4 numbers to the left of the entry in MAPDATA.WL6):</B></FONT></P>
+<BLOCKQUOTE>
+  <P><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B>0060 -- Key3 
+    door, vertical<BR>
+    0061 -- Key3 door, horizontal<BR>
+    0062 -- Key4 door, vertical<BR>
+    0063 -- Key4 door, horizontal</B></FONT></P>
+</BLOCKQUOTE>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B>&nbsp;&nbsp;&nbsp;For 
+  your convenience, here are the 4 lines from my MAPDATA file that define these 
+  doors. You can use them if you like.</B></FONT></P>
+<BLOCKQUOTE>
+  <P><FONT FACE="Courier New, Courier, mono" SIZE="2">0060 c070 Locked door (Key 
+    3)<BR>
+    0061 c060 Locked door (Key 3)<BR>
+    0062 f070 Locked door (Key 4)<BR>
+    0063 f060 Locked door (Key 4)</FONT></P>
+</BLOCKQUOTE>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2" COLOR="#FFFF99"><B>EXTRA 
+  CREDIT: ALTERING THE CHEAT CODES TO GIVE YOU ALL THE KEYS</B></FONT></P>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B>&nbsp;&nbsp;&nbsp;Now 
+  that you've got 4 keys instead of 2, wouldn't you like to have the &quot;M-L-I&quot; 
+  cheat give you all 4? No, not so you can cheat to the extreme -- so you can 
+  test your levels without having to go find the blasted keys every time. Here's 
+  how to fix M-L-I up real good.</B></FONT></P>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B><FONT COLOR="#FFFFFF">Step 
+  1.</FONT> <BR>
+  &nbsp;&nbsp;&nbsp;Open up WL_PLAY.C in your text editor.<BR>
+  <FONT COLOR="#FFFFFF">Step 2.</FONT> <BR>
+  &nbsp;&nbsp;&nbsp;Do a text search for &quot;MLI&quot;, or jump down to line 
+  665.<BR>
+  <FONT COLOR="#FFFFFF">Step 3.</FONT> <BR>
+  &nbsp;&nbsp;&nbsp;Okay, kiddies, this is the code that controls what the M-L-I 
+  cheat does. Remember this for future reference, lest you wish to eliminate the 
+  chance of people cheating so easily in your new add-on! Anyway, we're concerned 
+  with the line that says &quot;gamestate.keys = 3&quot;. See it? Change that 
+  &quot;3&quot; to a &quot;15&quot;. Now, you will get all 4 keys when you hit 
+  M-L-I. If you understand that gamestate.keys is a 4-bit binary variable, you'll 
+  see why it works this way. Key1 = 1, Key2 = 2, Key3 = 4, and Key4=8. Add all 
+  that up and what do you get? Yep -- 15. That's how binary addition works. I 
+  don't wanna explain it because I had a whole lecture on that when I started 
+  college and I don't wanna drag it out of my notes again. You can create any 
+  combination of keys this way. Say you only wanted to give the player Key1 (gold) 
+  and your new Key4? Make &quot;gamestate.keys&quot; equal to 9 (1 + 8). See how 
+  this works? You'll get it! Just play around with it. Don't feel bad if you don't 
+  understand yet. It took me a while too. I had to write a frickin' debug code 
+  that would tell me what the value of gamestate.keys was whenever I pressed Tab+Z, 
+  just so I could figure this stuff out.<BR>
+  <FONT COLOR="#FFFFFF">Step 4.</FONT> <BR>
+  &nbsp;&nbsp;&nbsp;Save WL_PLAY.C, go compile it and link, and you're done.<BR>
+  <FONT COLOR="#FFFFFF">FOR THE ULTIMATE TEST (RECOMMENDED FOR PEACE OF MIND):</FONT><BR>
+  <FONT COLOR="#FFFFFF">Step 5.</FONT> <BR>
+  &nbsp;&nbsp;&nbsp;Build a quick level in Mapedit that uses all 4 keys and all 
+  4 locked doors.<BR>
+  </B></FONT><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B><FONT COLOR="#FFFFFF">Step 
+  6.</FONT> <BR>
+  &nbsp;&nbsp;&nbsp;Run your new EXE, load the test level you just made, and hit 
+  &quot;M-L-I&quot;. If you get all your keys and all your icons come on, you've 
+  done it! Reload the level and try going around and picking up each key individually, 
+  to make sure it works and that the icons come on properly (I had a hell of a 
+  time with that at first, but the code I gave you all should work). Make sure 
+  the right keys open the right doors and all that stuff.</B></FONT></P>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2" COLOR="#FFFF99"><B>TAB+K: 
+  ALL KEYS CHEAT</B></FONT></P>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B>&nbsp;&nbsp;&nbsp;I 
+  went so far as to add a &quot;Get all keys&quot; cheat to the debug mode, complete 
+  with key pickup sound effects upon activation. If you want to do the same, you 
+  can go figure out how...or if you're lazy, you can copy and paste this code 
+  into your WL_DEBUG.C file, where all the rest of the key combos are defined. 
+  (You'll see where I mean once you take a look.)</B></FONT></P>
+<BLOCKQUOTE> 
+  <BLOCKQUOTE>
+    <P> <FONT FACE="Courier New, Courier, mono" SIZE="2" COLOR="#FF9999"><B>else 
+      if (Keyboard[sc_K]) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 
+      K = get keys<BR>
+      { <BR>
+      &nbsp;&nbsp;&nbsp;CenterWindow (18,3);<BR>
+      &nbsp;&nbsp;&nbsp;US_PrintCentered ("All keys acquired!");<BR>
+      &nbsp;&nbsp;&nbsp;VW_UpdateScreen();<BR>
+      &nbsp;&nbsp;&nbsp;SD_PlaySound (GETKEYSND);<BR>
+      &nbsp;&nbsp;&nbsp;gamestate.keys = 15;<BR>
+      &nbsp;&nbsp;&nbsp;DrawKeys();<BR>
+      &nbsp;&nbsp;&nbsp;IN_Ack ();<BR>
+      &nbsp;&nbsp;&nbsp;DrawAllPlayBorderSides ();<BR>
+      &nbsp;&nbsp;&nbsp;IN_ClearKeysDown();<BR>
+      &nbsp;&nbsp;&nbsp;return 1;<BR>
+      }</B></FONT></P>
+  </BLOCKQUOTE>
+</BLOCKQUOTE>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2" COLOR="#FFFF99"><B>WRAPPING 
+  IT UP</B></FONT></P>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B>&nbsp;&nbsp;&nbsp;Well, 
+  I hope you have enjoyed this little (little?!) lesson in the art of key creation. 
+  By now, hopefully you should be learning a few things from experience about 
+  where things are stored in the source code files, and the basics of C code organization. 
+  Of course, there is no substitute for going in there are just playing around, 
+  which is what I recommend you do. But for those who needed a quick fix for their 
+  latest add-on, I hope you enjoyed yourselves, and that everything worked as 
+  it should. Now, if you're one of those folks who desperately wants to make one 
+  big episode with seamless level progression, I've recently added just the tutorial 
+  for you. See it next!</B></FONT></P>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="3"><B><FONT COLOR="#FFFFFF">On 
+  to the next tutorial:</FONT> <A HREF="tut-seamless.htm">Seamless Level Progression 
+  w/Ratio Reporting</A></B></FONT></P>
+<HR>
+<P ALIGN="CENTER"><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">[ 
+  <A HREF="welcome.htm">Welcome</A> ] [ <A HREF="news.htm">News</A> ] [ <A HREF="about.htm">About 
+  the Bunker</A> ] [ <A HREF="addons.htm">Add-ons</A> ] [ <A HREF="tips.htm">Design 
+  Tips</A> ]<BR>
+  [ <A HREF="source.htm">Source Code</A> ] [ <A HREF="toten.htm">My Project </A> 
+  ] [ <A HREF="links.htm">Links</A> ]</FONT></P>
+<script src="../archive-map.js"></script><script src="../archive-shim.js"></script></body>
+</HTML>

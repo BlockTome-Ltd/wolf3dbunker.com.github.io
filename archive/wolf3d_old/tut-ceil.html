@@ -1,0 +1,123 @@
+<HTML>
+<HEAD>
+<TITLE>Wolfenstein Source Code</TITLE>
+<STYLE TYPE="text/css">
+<!--
+
+a    {text-decoration: none}
+
+-->
+</STYLE>
+<STYLE>
+<!--
+
+a:hover{color:#FFFF66; text-decoration:underline;}
+
+-->
+</STYLE>
+
+<SCRIPT LANGUAGE="JavaScript"> 
+<!--hide 
+
+ function newwindow() 
+ { 
+  window.open('./files/wolfpal.gif','palettewindow','width=652,height=492,resizable=no'); 
+ } 
+//--> 
+</SCRIPT> 
+
+
+</HEAD>
+
+<BODY BGCOLOR="#880000" TEXT="#CCCCCC" LINK="#CCCC33" VLINK="#999999" ALINK="#FFFF66">
+<TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0" BACKGROUND="images/tablebkg.gif">
+  <TR ALIGN="CENTER" BACKGROUND="images/tablebkg.gif"> 
+    <TD HEIGHT="48" WIDTH="100%"><IMG SRC="images/ttl-src.gif" WIDTH="224" HEIGHT="65" ALT="Source Code"></TD>
+  </TR>
+</TABLE>
+<FONT FACE="Verdana, Arial, Helvetica, sans-serif"><BR>
+</FONT>
+<TABLE WIDTH="100%" BORDER="0">
+  <TR BGCOLOR="#CC0000"> 
+    <TD> 
+      <P><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><B><FONT FACE="Arial, Helvetica, sans-serif" SIZE="3"><A NAME="disclaim"></A><IMG SRC="images/pistol2.gif" WIDTH="19" HEIGHT="11" ALIGN="BASELINE"></FONT><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">&nbsp;&nbsp;&nbsp;</FONT><FONT SIZE="2" COLOR="#FFFFFF">TUTORIAL 
+        1: Changing the Ceiling Colors</FONT></B></FONT></P>
+    </TD>
+  </TR>
+</TABLE>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif">&nbsp;&nbsp;&nbsp;<B><FONT SIZE="2">Before 
+  id Software ever released the source code, I was wanting to change the blasted 
+  ceiling colors. That, and the code that specified which level the secret elevator 
+  had to be on in each level. Changing the ceiling colors is so easy, it's one 
+  of the first things you can do. A knowledge of the hexadecimal number system 
+  will help you here, but for those who don't know (and don't want to learn), 
+  you can go back up to my Source Code main page and download WOLFPAL.GIF. It's 
+  a map of Wolfenstein's palette, plus a quick and easy way to find the hexadecimal 
+  values for a particular color index. You'll need that two-digit hex value to 
+  change the ceiling color to the color of your choice, as you will see below.</FONT></B></FONT></P>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><B><FONT SIZE="2" COLOR="#FFFFFF">Step 
+  1.</FONT><FONT SIZE="2"><BR>
+  </FONT></B>&nbsp;&nbsp;&nbsp;<B><FONT SIZE="2">Open up your favorite text editor. 
+  (I actually use DOS Edit.)<BR>
+  <FONT COLOR="#FFFFFF">Step 2.</FONT><BR>
+  </FONT>&nbsp;&nbsp;&nbsp;<FONT SIZE="2">Open the file WL_DRAW.C from your Wolfy 
+  source code directory.<BR>
+  <FONT COLOR="#FFFFFF">Step 3.</FONT><BR>
+  </FONT>&nbsp;&nbsp;&nbsp;<FONT SIZE="2">Do a text/ASCII search for &quot;vgaCeiling&quot;, 
+  or if you haven't changed anything yet, go right down to line 946.</FONT></B></FONT></P>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><B>&nbsp;&nbsp;&nbsp;<FONT SIZE="2">Okay, 
+  now you will see a huge mess of letters and numbers, separated by commas. They 
+  all start with &quot;0x&quot;, and are followed by 4 characters, usually a combination 
+  of letters and numbers. These are hexadecimal values. They represent the palette 
+  index number for a particular color in the Wolfenstein palette. A color index, 
+  by the way, is which position in the palette (00-ff in hex, 0-255 in decimal) 
+  each color is stored at. Notice how the first line starts with a whole bunch 
+  of &quot;0x1d1d&quot;'s. &quot;1d&quot; is hex for 29. Palette index 29 is that 
+  dull, boring gray that is the entirety of Episode 1 (except the secret level).<BR>
+  <BR>
+  Notice how the hex value for each ceiling color is repeated, so that it's really 
+  listed twice for each level. (Hence &quot;1d1d&quot;, instead of just &quot;1d&quot;.) 
+  If you put a different value for one of the &quot;1d&quot;s, such as &quot;dd&quot; 
+  which is brown, the ceiling will have vertical stripes on it -- one set of gray, 
+  one set of brown. I'm just saying this because it's true. I highly recommend 
+  against it. It looks ugly. (Plus the stripes aren't in perspective, so it looks 
+  like there's no roof, just a striped sky. Trippy.)<BR>
+  <BR>
+  The first line of values is Episode 1, and the 10 values from left to right 
+  are for levels 1 to 10, respectively. The levels are just listed in sequential 
+  order, basically.</FONT></B></FONT></P>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><B>&nbsp;&nbsp;&nbsp;<FONT SIZE="2">Here's 
+  a screenshot to show you what the code will look like. </FONT></B></FONT></P>
+<P ALIGN="CENTER"><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><IMG SRC="images/tutorials/ceiling-01.gif" WIDTH="641" HEIGHT="301" ALT="Source code image"></FONT></P>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><B>&nbsp;&nbsp;&nbsp;<FONT SIZE="2">Okay, 
+  let's get in there and mess things up!</FONT></B></FONT> </P>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B><FONT COLOR="#FFFFFF">Step 
+  4.<BR>
+  </FONT>&nbsp;&nbsp;&nbsp;Go to the value for the first level of the first episode 
+  (that 0x1d1d in the corner) and change the &quot;1d1d&quot; portion of the code 
+  to something else. You can pick something custom from the palette, or try one 
+  of these: &quot;0xcece&quot; for a funky peach, &quot;0x9898&quot; for a medium 
+  blue, &quot;0x1818&quot; for light gray, &quot;0x6f6f&quot; for a medium green, 
+  etc. Oh yeah, and don't put the quotes in there.<BR>
+  <FONT COLOR="#FFFFFF">Step 5.<BR>
+  </FONT>&nbsp;&nbsp;&nbsp;Save the file and go compile and link it to a new EXE.<BR>
+  <FONT COLOR="#FFFFFF">Step 6.</FONT> <BR>
+  &nbsp;&nbsp;&nbsp;Try it out in the game.</B></FONT></P>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B>&nbsp;&nbsp;&nbsp;That's 
+  it! Aren't ceiling colors easy? Remember, ceiling colors really do have an impact 
+  on the appearance and atmosphere of your level. I recommend picking a ceiling 
+  color that matches, or at least goes with, the primary ambient color of the 
+  walls you will be using. I.e., pick a nice brown ceiling like &quot;0xdddd&quot; 
+  for a level with lots of wood walls. Okay, now go have fun.</B></FONT></P>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="3"><B><BR>
+  <FONT COLOR="#FFFFFF">On to the next tutorial:</FONT> <A HREF="tut-music.html">Changing 
+  the Music on Each Level</A></B></FONT></P>
+<HR>
+<P ALIGN="CENTER"><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">[ 
+  <A HREF="welcome.html">Welcome</A> ] [ <A HREF="news.html">News</A> ] [ <A HREF="about.html">About 
+  the Bunker</A> ] [ <A HREF="addons.html">Add-ons</A> ] [ <A HREF="tips.html">Design 
+  Tips</A> ]<BR>
+  [ <A HREF="source.html">Source Code</A> ] [ <A HREF="toten.html">My Project 
+  </A> ] [ <A HREF="links.html">Links</A> ]</FONT></P>
+<script src="../archive-map.js"></script><script src="../archive-shim.js"></script></body>
+</HTML>

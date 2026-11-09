@@ -1,0 +1,99 @@
+<HTML>
+<HEAD>
+<TITLE>Wolfenstein Source Code</TITLE>
+<STYLE TYPE="text/css">
+<!--
+
+a    {text-decoration: none}
+
+-->
+</STYLE>
+<STYLE>
+<!--
+
+a:hover{color:#FFFF66; text-decoration:underline;}
+
+-->
+</STYLE>
+
+<SCRIPT LANGUAGE="JavaScript"> 
+<!--hide 
+
+ function newwindow() 
+ { 
+  window.open('./files/wolfpal.gif','palettewindow','width=652,height=492,resizable=no'); 
+ } 
+//--> 
+</SCRIPT> 
+
+
+</HEAD>
+
+<BODY BGCOLOR="#880000" TEXT="#CCCCCC" LINK="#CCCC33" VLINK="#999999" ALINK="#FFFF66">
+<TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0" BACKGROUND="images/tablebkg.gif">
+  <TR ALIGN="CENTER" BACKGROUND="images/tablebkg.gif"> 
+    <TD HEIGHT="48" WIDTH="100%"><IMG SRC="images/ttl-src.gif" WIDTH="224" HEIGHT="65" ALT="Source Code"></TD>
+  </TR>
+</TABLE>
+<FONT FACE="Verdana, Arial, Helvetica, sans-serif"><BR>
+</FONT>
+<TABLE WIDTH="100%" BORDER="0">
+  <TR BGCOLOR="#CC0000"> 
+    <TD> 
+      <P><FONT FACE="Verdana, Arial, Helvetica, sans-serif"><B><FONT FACE="Arial, Helvetica, sans-serif" SIZE="3"><IMG SRC="images/pistol2.gif" WIDTH="19" HEIGHT="11" ALIGN="BASELINE"></FONT><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">&nbsp;&nbsp;&nbsp;</FONT><FONT SIZE="2" COLOR="#FFFFFF">TUTORIAL 
+        5: Seamless Level Progression w/Ratio Reporting</FONT></B></FONT></P>
+    </TD>
+  </TR>
+</TABLE>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif">&nbsp;&nbsp;&nbsp;<B><FONT SIZE="2">Of 
+  all the things people ask me how to do with the Wolfensten source code, probably 
+  the #1 most asked thing is, &quot;How do I create seamless level progression 
+  and have ratio reporting after every level?&quot; Well, after getting hammered 
+  with this one for so long, I decided to take a day of my time and get something 
+  really nice put up as to how you, the Wolfenstein programmer, can accomplish 
+  this. Unlike the previous tutorials I've posted up, this process involves <I>six</I> 
+  different files of code. As the changes necessary are so widespread, I can't 
+  really write a step-by-step tutorial. Instead, I've provided each of the 6 files 
+  for you, and you can take a look at the modifications I've done and learn how 
+  to implement them yourself (or for ultimate laziness, just compile my files).</FONT></B></FONT></P>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif">&nbsp;&nbsp;&nbsp;<B><FONT SIZE="2">The 
+  6 files that need modifications are: WL_INTER.C, WL_MAIN.C, WL_MENU.C, WL_MENU.H, 
+  and WL_DEBUG.C. The last one is just for a convenience issue but I threw it 
+  in for your added pleasure. :) Okay, click on each of the names below to take 
+  a look at the file and see what I did to it. To find the blocks of code where 
+  modifications were made, do a search for the text BJ3CODE by pressing Control+F 
+  in your browser (if that doesn't work, try F3). Each code modification is preceeded 
+  by a commented line with this word on it, so searching for it will take you 
+  right to the things that were changed. Alternatively, you click the final link 
+  which will let you download a ZIP file containing all of the above files. Enjoy 
+  your meal!</FONT></B></FONT></P>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif" COLOR="#FFFFFF"><B>VIEWABLE 
+  SOURCE FILES</B></FONT></P>
+<UL>
+  <LI><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B><A HREF="wolf3d_old/files/wl_interc.txt">WL_INTER.C</A> 
+    -- Handles the intermission screen, where you'll see the ratios</B></FONT></LI>
+  <LI><B><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><A HREF="wolf3d_old/files/wl_mainc.txt">WL_MAIN.C</A> 
+    -- Controls how the secret levels will be handled (for more precise control 
+    than in <A HREF="wolf3d_old/tut-elev.htm">Tutorial 3</A>!)</FONT></B></LI>
+  <LI><B><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><A HREF="wolf3d_old/files/wl_menuc.txt">WL_MENU.C</A> 
+    -- Changes to this file cause the game to skip the episode select screen</FONT></B></LI>
+  <LI><B><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><A HREF="wolf3d_old/files/wl_menuh.txt">WL_MENU.H</A> 
+    -- Just commenting out 1 line to avoid compiler error</FONT></B></LI>
+  <LI><B><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><A HREF="wolf3d_old/files/wl_debugc.txt">WL_DEBUG.C</A> 
+    -- Changes here let you warp to any level in the game (1-60)</FONT></B></LI>
+</UL>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif" COLOR="#FFFFFF"><B>SOURCE 
+  ARCHIVE</B></FONT></P>
+<UL>
+  <LI><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B><A HREF="missing.html?p=%2Ffiles%2Fseamless.zip">SEAMLESS.ZIP</A> 
+    -- Get the whole thing right here</B></FONT></LI>
+</UL>
+<HR>
+<P ALIGN="CENTER"><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">[ 
+  <A HREF="welcome.htm">Welcome</A> ] [ <A HREF="news.htm">News</A> ] [ <A HREF="about.htm">About 
+  the Bunker</A> ] [ <A HREF="wolf3d_old/addons.htm">Add-ons</A> ] [ <A HREF="wolf3d_old/tips.htm">Design 
+  Tips</A> ]<BR>
+  [ <A HREF="source.htm">Source Code</A> ] [ <A HREF="toten.htm">My Project </A> 
+  ] [ <A HREF="links.htm">Links</A> ]</FONT></P>
+<script src="archive-map.js"></script><script src="archive-shim.js"></script></body>
+</HTML>

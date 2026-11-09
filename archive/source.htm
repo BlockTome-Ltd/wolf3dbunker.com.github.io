@@ -1,0 +1,295 @@
+<HTML>
+<HEAD>
+<TITLE>Wolfenstein Source Code Help</TITLE>
+
+<META NAME="keywords" CONTENT="wolfenstein, 3d, wolf3d, source, code, tutorials, utilities,
+game, add-ons, projects, design, levels, B.J. Rowan,wolfenstein, wolf3d, code, utilities, add-ons,
+design, B.J. Rowan, 3d, source, tutorials, game, projects, levels, 3d, code, game,
+design,wolfenstein, source, utilities, projects, B.J. Rowan, wolf3d, tutorials, add-ons, levels,
+wolf3d, utilities, design, 3d, tutorials, projects, source, game, levels,wolfenstein, code, add-ons,
+B.J. Rowan, code, projects, wolf3d, game, B.J. Rowan,wolfenstein, tutorials, design, 3d, utilities,
+levels, source, add-ons,wolfenstein, utilities, B.J. Rowan, source, projects, code, design, wolf3d,
+add-ons, 3d, game, tutorials, levels">
+<META NAME="description" CONTENT="Offers help and tutorials on Wolfenstein 3D source code,
+level creation, utilities, and add-ons.">
+
+<STYLE TYPE="text/css">
+<!--
+
+a    {text-decoration: none}
+
+-->
+</STYLE>
+<STYLE>
+<!--
+
+a:hover{color:#FFFF66; text-decoration:underline;}
+
+-->
+</STYLE>
+
+<SCRIPT LANGUAGE="JavaScript"> 
+<!--hide 
+
+ function newwindow() 
+ { 
+  window.open('./files/wolfpal.gif','palettewindow','width=652,height=492,resizable=no'); 
+ } 
+//--> 
+</SCRIPT> 
+
+
+</HEAD>
+
+<BODY BGCOLOR="#880000" TEXT="#CCCCCC" LINK="#CCCC33" VLINK="#999999" ALINK="#FFFF66">
+<TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0" BACKGROUND="images/tablebkg.gif">
+  <TR ALIGN="CENTER" BACKGROUND="images/tablebkg.gif"> 
+    <TD HEIGHT="48" WIDTH="100%"><IMG SRC="images/ttl-src.gif" WIDTH="224" HEIGHT="65" ALT="Source Code"></TD>
+  </TR>
+</TABLE>
+<TABLE ALIGN="RIGHT" WIDTH="300">
+  <TR>
+    <TD><IMG SRC="images/tcscreen.gif" WIDTH="300" HEIGHT="188" ALIGN="RIGHT" ALT="My ancient compiler, Borland Turbo C++ 3.0"></TD>
+  </TR>
+  <TR>
+    <TD>
+      <DIV ALIGN="CENTER"><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2" COLOR="#00CCCC"><B>The 
+        Borland Turbo C++ 3.0 IDE. About as old and clunky as they come.</B></FONT></DIV>
+    </TD>
+  </TR>
+</TABLE>
+<P><FONT FACE="Arial, Helvetica, sans-serif"> &nbsp;&nbsp;&nbsp;<B><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">The 
+  world's worth of Wolfenstein players have been making add-ons for the game for 
+  years now, and yet there are still a lot of Wolf3D add-ons constantly in development. 
+  The game still has a cult following, you might say. I have been playing around 
+  with Wolfenstein's levels, graphics and sound effects for years now, but something 
+  I could never do was change the hard-coded data in the EXE. This includes things 
+  like the ceiling colors and music for each level, episode names in the menus, 
+  the way the enemies behave, the floors on which the secret elevators are placed 
+  -- and that only scratches the surface of the things you can alter in the code. 
+  Finally, I have had a breakthrough with the code, and now a whole new world 
+  of changes are available to me. It's very exciting!</FONT></B></FONT></P>
+<P><FONT FACE="Arial, Helvetica, sans-serif">&nbsp;&nbsp;&nbsp;<B><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">Getting 
+  the code to compile isn't as simple as 1-2-3. Here's what you will need:</FONT></B></FONT></P>
+<UL>
+  <LI><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B>The registered 
+    version of the game (shareware doesn't seem to work)</B></FONT></LI>
+  <LI><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B>The source 
+    code (woah)</B></FONT></LI>
+  <LI><B><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">A C/C++ compiler 
+    with assembler (more on this later)</FONT></B></LI>
+  <LI><B><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">The proper 
+    version of the VGAGRAPH, VGADICT, AND VGAHEAD files</FONT></B></LI>
+</UL>
+<P><FONT FACE="Arial, Helvetica, sans-serif"><IMG SRC="images/badshot2.gif" WIDTH="250" HEIGHT="156" ALIGN="LEFT" HSPACE="5" ALT="What I've been seeing for 4 years">&nbsp;&nbsp;&nbsp;<B><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">The 
+  compiler is perhaps the hardest part, since unless you want (and know how) to 
+  make some changes to the code throughout, you will need a Borland compiler, 
+  and an old one too. The code compiles perfectly with Borland C++ 3.1. Anything 
+  other than Borland and you're taking a risk. Any version of Borland C++ beyond 
+  3.1 and you have to update the old code. I have Borland Turbo C++ 3.0, and it 
+  seems to be sufficient overall. There are two problems however. It miscompiles 
+  two important files, the caching manager source file (ID_CA.C) and the sound 
+  manager (ID_SD.C), resulting in screwy-looking graphics like in the screen shot 
+  to the left, and slightly clipped-sounding FM effects (rubbing against walls, 
+  key pickup, etc). Fortunately I got the compiled .OBJ files for this source 
+  from a friend, so I am able to produce functioning EXEs now. In this section 
+  I'll provide you with everything I can to help you get the code to compile too.</FONT></B></FONT></P>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="3" COLOR="#FFFFFF"><B>GOOD 
+  NEWS -- COMPILER AVAILABLE</B></FONT><FONT FACE="Arial, Helvetica, sans-serif"><B><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"> 
+  <BR>
+  </FONT><FONT FACE="Verdana, Arial, Helvetica, sans-serif">&nbsp;&nbsp;&nbsp;</FONT><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">Thanks 
+  to Brandon Farmer, another Wolfenstein source code enthusiast, I now have a 
+  link to the <A HREF="https://web.archive.org/web/2003/http://members.xoom.com/the_lord_b/TC.zip">Borl</A></FONT><A HREF="https://web.archive.org/web/2003/http://members.xoom.com/the_lord_b/TC.zip"><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">and 
+  Turbo C++ 3.0 compiler</FONT></A><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">, 
+  available from his web sever. Snag it if you want to compile the code. Just 
+  make sure you also get the ID_CA.OBJ and ID_SD.OBJ files I supply for you (see 
+  below). If you want the same compiler id Software used (which can compile <I>all</I> 
+  files correctly), Borland C++ 3.1, try a flea market or garage sale.</FONT></B></FONT></P>
+<P><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="3" COLOR="#FFFFFF"><B>SETTING 
+  UP BORLAND TURBO C++ 3.0</B></FONT><FONT FACE="Arial, Helvetica, sans-serif"><B><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><BR>
+  </FONT><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">&nbsp;&nbsp;&nbsp;Stuck? 
+  I wrote up a page of instructions on how to set up Borland Turbo C++ 3.0 and 
+  compile your first EXE.</FONT><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"> 
+  <BR>
+  </FONT><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">&nbsp;&nbsp;&nbsp;<A HREF="wolf3d_old/setuptc.htm">Click 
+  here to read it.</A> If you are having trouble or need some more info, you can 
+  also check out <A HREF="https://web.archive.org/web/2003/http://presys.com/%7Elwd/source/">Brandon Farmer's Source 
+  Code Help Center.</A></FONT></B></FONT></P>
+<HR>
+<P ALIGN="CENTER"><FONT COLOR="#00CCCC" SIZE="4" FACE="Verdana, Arial, Helvetica, sans-serif"><B>Source 
+  Code and Utilities</B></FONT><BR>
+</P>
+<TABLE BORDER="0" CELLSPACING="0">
+  <TR> 
+    <TD WIDTH="175"><FONT FACE="Verdana, Arial, Helvetica, sans-serif" COLOR="#FFFFFF"><B>WOLFSRC.ZIP 
+      </B></FONT></TD>
+    <TD WIDTH="20">&nbsp;</TD>
+    <TD WIDTH="125"> <FONT FACE="Verdana, Arial, Helvetica, sans-serif" COLOR="#FFFF99"><B>Source 
+      Code </B></FONT></TD>
+    <TD WIDTH="20">&nbsp;</TD>
+    <TD WIDTH="65"><FONT FACE="Verdana, Arial, Helvetica, sans-serif" COLOR="#FFFF99"><B>563 
+      K </B></FONT></TD>
+    <TD WIDTH="20">&nbsp;</TD>
+    <TD><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B>[ <A HREF="missing.html?p=%2Ffiles%2Fwolfsrc.zip">Download</A> 
+      ]</B></FONT></TD>
+  </TR>
+</TABLE>
+<TABLE BORDER="0" CELLSPACING="0">
+  <TR> 
+    <TD><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B>Here it 
+      is -- the Wolfenstein 3D and Spear of Destiny source code. Includes Borland 
+      C++ 3.0/3.1 project file. Just remember to change the lib and include directories 
+      to reflect your compiler's location, and the location of the SIGNON.OBJ 
+      and GAMEPAL.OBJ files in the project. They will be C:\SOURCE\WOLF by default.</B></FONT></TD>
+  </TR>
+</TABLE>
+<P ALIGN="CENTER"> </P>
+<TABLE BORDER="0" CELLSPACING="0">
+  <TR> 
+    <TD WIDTH="175"><FONT FACE="Verdana, Arial, Helvetica, sans-serif" COLOR="#FFFFFF"><B>WOLFOBJ.ZIP</B></FONT></TD>
+    <TD WIDTH="20">&nbsp;</TD>
+    <TD WIDTH="125"> <FONT FACE="Verdana, Arial, Helvetica, sans-serif" COLOR="#FFFF99"><B>.OBJ 
+      Files </B></FONT></TD>
+    <TD WIDTH="20">&nbsp;</TD>
+    <TD WIDTH="65"><FONT FACE="Verdana, Arial, Helvetica, sans-serif" COLOR="#FFFF99"><B>501 
+      K </B></FONT></TD>
+    <TD WIDTH="20">&nbsp;</TD>
+    <TD><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B>[ </B></FONT><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B><A HREF="missing.html?p=%2Ffiles%2Fwolfobj.zip">Download</A></B></FONT><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B> 
+      ]</B></FONT></TD>
+  </TR>
+</TABLE>
+<TABLE BORDER="0" CELLSPACING="0">
+  <TR> 
+    <TD><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B>All the 
+      .OBJ files from a successful compile of the original source code (plus the 
+      EXE produced after linking) are included here. May help you reverse-engineer 
+      any problems you may be having, or work around files you can't get compiled.</B></FONT></TD>
+  </TR>
+</TABLE>
+<BR>
+<TABLE BORDER="0" CELLSPACING="0">
+  <TR> 
+    <TD WIDTH="175"><FONT FACE="Verdana, Arial, Helvetica, sans-serif" COLOR="#FFFFFF"><B>TCOBJ.ZIP</B></FONT></TD>
+    <TD WIDTH="20">&nbsp;</TD>
+    <TD WIDTH="125"> <FONT FACE="Verdana, Arial, Helvetica, sans-serif" COLOR="#FFFF99"><B>.OBJ 
+      Files </B></FONT></TD>
+    <TD WIDTH="20">&nbsp;</TD>
+    <TD WIDTH="65"><FONT FACE="Verdana, Arial, Helvetica, sans-serif" COLOR="#FFFF99"><B>29 
+      K </B></FONT></TD>
+    <TD WIDTH="20">&nbsp;</TD>
+    <TD><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B>[ </B></FONT><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B><A HREF="files/tcobj.zip">Download</A></B></FONT><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B> 
+      ]</B></FONT></TD>
+  </TR>
+</TABLE>
+<TABLE BORDER="0" CELLSPACING="0">
+  <TR> 
+    <TD><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B>These are 
+      <I>only</I> the two .OBJ files that Borland Turbo C++ 3.0 cannot compile 
+      properly. If you have this compiler, these are the only two precompiled 
+      .OBJ files that you should need to get things working right. (Check out 
+      my <A HREF="wolf3d_old/setuptc.htm">tutorial</A> on setting up Turbo C++ 3.0 for more 
+      details.)</B></FONT></TD>
+  </TR>
+</TABLE>
+<P ALIGN="CENTER"> </P>
+<TABLE BORDER="0" CELLSPACING="0">
+  <TR> 
+    <TD WIDTH="175"><FONT FACE="Verdana, Arial, Helvetica, sans-serif" COLOR="#FFFFFF"><B>VGAFILES.ZIP 
+      </B></FONT></TD>
+    <TD WIDTH="20">&nbsp;</TD>
+    <TD WIDTH="125"> <FONT FACE="Verdana, Arial, Helvetica, sans-serif" COLOR="#FFFF99"><B>VGA*.WL6 
+      </B></FONT></TD>
+    <TD WIDTH="20">&nbsp;</TD>
+    <TD WIDTH="65"><FONT FACE="Verdana, Arial, Helvetica, sans-serif" COLOR="#FFFF99"><B>165 
+      K </B></FONT></TD>
+    <TD WIDTH="20">&nbsp;</TD>
+    <TD><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B>[ </B></FONT><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B><A HREF="missing.html?p=%2Ffiles%2Fvgafiles.zip">Download</A></B></FONT><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B> 
+      ]</B></FONT></TD>
+  </TR>
+</TABLE>
+<TABLE BORDER="0" CELLSPACING="0">
+  <TR> 
+    <TD><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B>This archive 
+      includes VGAGRAPH.WL6, VGADICT.WL6, and VGAHEAD.WL6. You will need these 
+      <I>exact</I> versions of these files in order to play your compiled EXEs 
+      properly. Make sure to include them with your add-ons!</B></FONT></TD>
+  </TR>
+</TABLE>
+<BR>
+<TABLE BORDER="0" CELLSPACING="0">
+  <TR> 
+    <TD WIDTH="175"><FONT FACE="Verdana, Arial, Helvetica, sans-serif" COLOR="#FFFFFF"><B>TC.ZIP 
+      </B></FONT></TD>
+    <TD WIDTH="20">&nbsp;</TD>
+    <TD WIDTH="125"> <FONT FACE="Verdana, Arial, Helvetica, sans-serif" COLOR="#FFFF99"><B>Compiler 
+      </B></FONT></TD>
+    <TD WIDTH="20">&nbsp;</TD>
+    <TD WIDTH="65"><FONT FACE="Verdana, Arial, Helvetica, sans-serif" COLOR="#FFFF99"><B>3.1 
+      MB </B></FONT></TD>
+    <TD WIDTH="20">&nbsp;</TD>
+    <TD><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B>[ <A HREF="https://web.archive.org/web/2003/http://members.xoom.com/the_lord_b/TC.zip">Download</A> 
+      ]</B></FONT></TD>
+  </TR>
+</TABLE>
+<TABLE BORDER="0" CELLSPACING="0">
+  <TR> 
+    <TD><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B>This is 
+      the Borland Turbo C 3.0 compiler. It will compile Wolfenstein properly except 
+      for the two C files I mentioned above, which are available pre-compiled 
+      for you in WOLFOBJ.ZIP. Download them and dump them in your OBJ directory.</B></FONT></TD>
+  </TR>
+</TABLE>
+<BR>
+<TABLE BORDER="0" CELLSPACING="0">
+  <TR> 
+    <TD WIDTH="175"><FONT FACE="Verdana, Arial, Helvetica, sans-serif" COLOR="#FFFFFF"><B>WOLFPAL.GIF 
+      </B></FONT></TD>
+    <TD WIDTH="20">&nbsp;</TD>
+    <TD WIDTH="125"> <FONT FACE="Verdana, Arial, Helvetica, sans-serif" COLOR="#FFFF99"><B>Color 
+      Table </B></FONT></TD>
+    <TD WIDTH="20">&nbsp;</TD>
+    <TD WIDTH="65"><FONT FACE="Verdana, Arial, Helvetica, sans-serif" COLOR="#FFFF99"><B>21 
+      K </B></FONT></TD>
+    <TD WIDTH="20">&nbsp;</TD>
+    <TD><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B>[ </B></FONT><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B><A HREF="javascript:newwindow()">View</A></B></FONT><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B> 
+      ]</B></FONT></TD>
+  </TR>
+</TABLE>
+<TABLE BORDER="0" CELLSPACING="0">
+  <TR> 
+    <TD><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><B>If you're 
+      working on the source code and you want to put in new ceiling colors, this 
+      will help you. You can use this chart to quickly find the hex value for 
+      the palette index of the color you want. Just take the number from the vertical 
+      axis and then the number from the horizontal axis, and that's the value 
+      you put in for your ceiling color in WL_DRAW.C. This can also help for when 
+      you're setting other colors, like the color of highlighted menu items.</B></FONT></TD>
+  </TR>
+</TABLE>
+<BR>
+<HR>
+<FONT FACE="Arial, Helvetica, sans-serif"> </FONT> 
+<P ALIGN="CENTER"><FONT COLOR="#00CCCC" SIZE="4" FACE="Verdana, Arial, Helvetica, sans-serif"><B>Tutorials</B></FONT></P>
+<P><FONT FACE="Arial, Helvetica, sans-serif">&nbsp;&nbsp;&nbsp;<B><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">Here 
+  are some beginner's tutorials to get you started with the basics of Wolfenstein 
+  source code modification. My advice to you is to study the source code, and 
+  study it well. Everything I know about C I learned from &quot;reading&quot; 
+  the Wolfenstein source. You'll figure out how to do lots of stuff if you just 
+  play around and experiment. But for the basic easy stuff that you've &quot;always 
+  wanted to do&quot;, here's a few tutorials to get you up and running.</FONT></B></FONT></P>
+<P><B><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">[ <A HREF="wolf3d_old/tut-ceil.htm">Changing 
+  the Ceiling Colors</A> ]<BR>
+  [ <A HREF="wolf3d_old/tut-music.htm">Changing the Music on Each Level</A> ]<BR>
+  [ <A HREF="wolf3d_old/tut-elev.htm">Changing the Secret Elevator Back Maps</A> ]<BR>
+  [ <A HREF="wolf3d_old/tut-keys.htm">Adding New Keys and Their Status Bar Icons</A> ]<BR>
+  [ <A HREF="tut-seamless.htm">Seamless Level Progression w/Ratio Reporting</A> 
+  ] <IMG SRC="images/newanim.gif" WIDTH="36" HEIGHT="10"></FONT></B></P>
+<HR>
+<P ALIGN="CENTER"><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">[ 
+  <A HREF="welcome.htm">Welcome</A> ] [ <A HREF="news.htm">News</A> ] [ <A HREF="about.htm">About 
+  the Bunker</A> ] [ <A HREF="wolf3d_old/addons.htm">Add-ons</A> ] [ <A HREF="wolf3d_old/tips.htm">Design 
+  Tips</A> ]<BR>
+  [ <B>Source Code</B> ] [ <A HREF="toten.htm">My Project </A> ] [ <A HREF="links.htm">Links</A> 
+  ]</FONT></P>
+<script src="archive-map.js"></script><script src="archive-shim.js"></script></body>
+</HTML>

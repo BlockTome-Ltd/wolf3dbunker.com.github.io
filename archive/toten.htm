@@ -1,0 +1,392 @@
+<html>
+<head>
+<title>B.J. Rowan's Wolf3D Bunker -- Project Totengraeber</title>
+
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="wolfenstein, 3d, wolf3d, source, code, tutorials, utilities,
+game, add-ons, projects, design, levels, wolfenstein, wolf3d, code, utilities, add-ons,
+design, 3d, source, tutorials, game, projects, levels, 3d, code, game,
+design,wolfenstein, source, utilities, projects, wolf3d, tutorials, add-ons, levels,
+wolf3d, utilities, design, 3d, tutorials, projects, source, game, levels,wolfenstein, code, add-ons,
+code, projects, wolf3d, game, wolfenstein, tutorials, design, 3d, utilities,
+levels, source, add-ons,wolfenstein, utilities, source, projects, code, design, wolf3d,
+add-ons, 3d, game, tutorials, levels">
+<META NAME="description" CONTENT="Offers help and tutorials on Wolfenstein 3D source code,
+level creation, utilities, and add-ons.">
+
+<link rel=stylesheet href="scripts/bunker_menu.css" type="text/css">
+<script language="javascript" src="scripts/menu_code.js"></script>
+<script language="javascript" src="scripts/menu_define.js"></script>
+<STYLE TYPE="text/css">
+<!--
+a    {text-decoration: none}
+a:hover{color:#FFFFFF;}
+-->
+</STYLE>
+</head>
+
+<body bgcolor="#990000" text="#CCCCCC" link="#CCCC00" vlink="#999999" alink="#FFFF66" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onload="buildMenu('bunkerMenu');">
+<table width="760" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr> 
+    <td>&nbsp;</td>
+    <td> 
+      <div id="menuHolder"><img src="images/onepixel.gif" width="1" height="17"></div>
+    </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr> 
+    <td colspan="3"> 
+      <table width="760" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td width="40"><img src="images/upleft_stripe.gif" width="40" height="51"></td>
+          <td width="150"><img src="images/title_projects.gif" width="150" height="51" alt="My Projects"></td>
+          <td width="570"><img src="images/masthead.gif" width="570" height="51"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td align="left" valign="top" height="14" width="20"><img src="images/corner_tl.gif" width="20" height="14"></td>
+    <td width="720" height="14"><img src="images/spacer.gif" width="1" height="14"></td>
+    <td align="right" valign="top" width="20" height="14"><img src="images/corner_tr.gif" width="20" height="14"></td>
+  </tr>
+  <tr> 
+    <td align="left" valign="top" background="images/leftedge_tile.gif" height="100%">&nbsp;</td>
+    <td width="720"> 
+      <table width="720" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td width="478" valign="top">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr valign="bottom"> 
+                <td><font face="Verdana, Arial, Helvetica, sans-serif"><b><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#CCCCCC"><img src="images/pistol2.gif" width="19" height="11" align="baseline"></font> 
+                  <font color="#FFFFFF" size="2">&nbsp;PROJECT TOTENGRAEBER</font></b></font></td>
+              </tr>
+              <tr bgcolor="#000000"> 
+                <td height="1"><img src="images/pixel.gif" width="1" height="1"></td>
+              </tr>
+            </table>
+            <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">It 
+              all started with a few levels I had intended for a Spear of Destiny 
+              add-on called &quot;Quest for the Blade&quot;, back in 1997. When 
+              I suddenly found myself able to compile the Wolfenstein source code, 
+              I scrapped the Spear project and migrated the few levels I had over 
+              to what would become my greatest Wolfenstein campaign ever: <b><i>Project 
+              Totengraeber. </i></b></font></p>
+            <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b><i>Project 
+              Totengraeber</i></b> (translated: &quot;Gravedigger&quot;) is one 
+              of a brand-new generation of Wolf3D add-ons. Since the release of 
+              the game's source code, designing only new level packages no longer 
+              seemed to be enough for me, and many other designers as well. As 
+              a result, <i>Project Totengraeber</i> has several new features in 
+              the game engine, many of which are concepts made popular by <b>Gary 
+              Ragland</b>, with his excellent and revolutionary Wolfenstein add-ons 
+              <i>Assassinate Hitler!</i> and <i>Schabbs 2000</i>. Consider my 
+              project a full-scale epic reproduction of the original Wolfenstein 
+              Episode 2, the theme of which was definitely my favorite of all. 
+              The complete story will be distributed with the game when it's ready, 
+              but here's an abridged version to introduce you...</font></p>
+            <table width="478" align="CENTER" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" border="0" background="images/papertop.gif">
+              <tr background="images/papertop.gif"> 
+                <td width="640" height="40">&nbsp;</td>
+              </tr>
+            </table>
+            <table width="478" align="CENTER" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" border="0" background="images/papertile.gif">
+              <tr background="images/papertile.gif"> 
+                <td width="640" height="40"> 
+                  <div align="CENTER"> 
+                    <p><img src="images/totentitle.gif" width="422" height="40" alt="Project Totengraeber: Top Secret"></p>
+                  </div>
+                  <blockquote> 
+                    <blockquote> 
+                      <div align="LEFT">
+                        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">&nbsp;&nbsp;&nbsp;<font face="Georgia, Times New Roman, Times, serif">It's 
+                          1942, and the Second World War is raging. Allied Intelligence 
+                          delivers a startling rumor from the Eastern Front: that 
+                          a top Nazi scientist, one Arzt Schabbs, has found a 
+                          way to resurrect soldiers who have been killed in battle 
+                          and send them back to the front lines -- in a macabre 
+                          experiment known as &quot;Project Totengraeber&quot;. 
+                          If the rumor is true, and the experiment succeeds...it 
+                          would mean the Nazis would have an effectively limitless 
+                          source of manpower to wage their war. In addition, recon 
+                          teams coming back from top-secret missions deep within 
+                          enemy territory have reported a suspicious amassing 
+                          of soldiers and top Nazi generals in a localized area 
+                          of Nazi Germany. This mountainous region, home to several 
+                          ancient German castles, was originally thought to hold 
+                          no strategic importance, but apparently the Nazis have 
+                          some sort of secret operation underway in that sector. 
+                          Could it be related to the rumored <i>Totengraeber</i> 
+                          project? Could the execution of a massive new Nazi campaign 
+                          be imminent?</font></font></p>
+                        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">&nbsp;&nbsp;&nbsp;<font face="Georgia, Times New Roman, Times, serif">You 
+                          play the role of Captain B.J. Blazkowicz, recently escaped 
+                          from imprisonment at the Castle Wolfenstein detention 
+                          complex. Having returned home, you receive orders to 
+                          undertake possibly the biggest, boldest mission ever: 
+                          single-handedly stop Arzt Schabbs' mad plot, and eliminate 
+                          his army of undead killing machines. You must make your 
+                          way through a system of underground tunnels, through 
+                          the various castles in Schabbs' network, and finally 
+                          reach Schabbs' laboratory and bunker, beneath Castle 
+                          Dolchteufel. Be alert -- Schabbs apparently has the 
+                          official support of Hitler's top generals, perhaps even 
+                          the Fuhrer himself -- and you may encounter some of 
+                          them at the installations you will be infiltrating! 
+                          Remember that destroying Schabbs and his experiment 
+                          is your objective, which must be completed <i>at all 
+                          costs!</i></font></font></p>
+                      </div>
+                      </blockquote>
+                  </blockquote>
+                </td>
+              </tr>
+            </table>
+            <table width="478" align="CENTER" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" border="0" background="images/paperbottom.gif">
+              <tr background="images/paperbottom.gif"> 
+                <td width="640" height="40">&nbsp;</td>
+              </tr>
+            </table>
+            <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><i><b>Project 
+              Totengraeber</b></i><b> features:</b></font></p>
+            <ul>
+              <li><font face="Verdana, Arial, Helvetica, sans-serif" size="2">48 
+                brand new levels</font></li>
+              <li><font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+                Some new art and sound effects from various sources and my own 
+                design</font></li>
+              <li><font face="Verdana, Arial, Helvetica, sans-serif" size="2">One 
+                massive episode with seamless level flow</font></li>
+              <li><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Changed 
+                ceiling colors</font></li>
+              <li><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Changed 
+                music order</font></li>
+              <li><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Two 
+                new keys (the bronze key and the elevator keycard) with icons 
+                on the status bar</font></li>
+              <li><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Maximum 
+                ammo of 150 bullets, with standard clips and 16-bullet ammo boxes</font></li>
+              <li><font face="Verdana, Arial, Helvetica, sans-serif" size="2">1-Ups 
+                raise your health beyond 100%, to a maximum of 200%</font></li>
+              <li><font face="Verdana, Arial, Helvetica, sans-serif" size="2">5 
+                secret levels, plus a Super Secret Level™ </font></li>
+              <li><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Increased 
+                enemy strength and agility at Death Incarnate difficulty for a 
+                bigger challenge</font></li>
+              <li><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Non 
+                game-terminating bosses (you can kill General Fettgesicht, for 
+                instance, and the episode doesn't automatically end)</font></li>
+              <li><font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+                Elimination of most cheat codes (you're gonna play these levels 
+                for real!)</font></li>
+              <li><font face="Verdana, Arial, Helvetica, sans-serif" size="2">And 
+                more stuff too! </font></li>
+            </ul>
+            <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">The 
+              game's 48 levels, instead of being arranged in six 10-level episodes, 
+              are laid out as one continuous mission, consisting of several groups 
+              or "units" with a common theme. For instance, the first few levels 
+              are of Castle Sturmwind and its lower levels, your point of entry 
+              to the underground tunnel system. Further levels consist of cellars, 
+              laboratories, and offices of the other various castles connected 
+              by the tunnels. The last few levels are of Castle Dolchteufel and 
+              its underground bunker, the final installation in the <i>Totengraeber</i> 
+              plot, where Arzt Schabbs himself is overseeing the entire experiment. 
+              Find his lab deep within the Dolchteufel bunker and take him out, 
+              and all of his zombie soldiers along with him!</font></p>
+            <p align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b><a href="files/toten-p2final.zip">DOWNLOAD 
+              PROJECT TOTENGRAEBER PHASE 2 / FINAL</a></b></font></p>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr valign="bottom"> 
+                <td><font face="Verdana, Arial, Helvetica, sans-serif"><b><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#CCCCCC"><img src="images/pistol2.gif" width="19" height="11" align="baseline"></font> 
+                  <font color="#FFFFFF" size="2">&nbsp;TOTENGRAEBER DEVELOPER'S 
+                  KIT </font></b></font></td>
+              </tr>
+              <tr bgcolor="#000000"> 
+                <td height="1"><img src="images/pixel.gif" width="1" height="1"></td>
+              </tr>
+            </table>
+            <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">For 
+              the ultimate <i>Totengraeber</i> fan who's got to have it all. The 
+              Developer's Kit includes the complete source code for <i>Project 
+              Totengraeber, </i>Mapedit definition files for making your own levels, 
+              the TrueType font used for the digits on the status bar and the 
+              headline on the title screen, and a music conversion chart for <i>Totengraeber's</i> 
+              new music file, courtesy of Chris Chokan, el hex editing maestro. 
+              If you wanna know what really makes <i>Project Totengraeber</i> 
+              tick, grab the Developer's Kit!</font></p>
+            <p align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b><a href="files/toten-developer.zip">DOWNLOAD 
+              THE TOTENGRAEBER DEVELOPER'S KIT</a></b></font></p>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr valign="bottom"> 
+                <td><font face="Verdana, Arial, Helvetica, sans-serif"><b><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#CCCCCC"><img src="images/pistol2.gif" width="19" height="11" align="baseline"></font> 
+                  <font color="#FFFFFF" size="2">&nbsp;PROJECT TOTENGRAEBER: PHASE 
+                  1 </font></b></font></td>
+              </tr>
+              <tr bgcolor="#000000"> 
+                <td height="1"><img src="images/pixel.gif" width="1" height="1"></td>
+              </tr>
+            </table>
+            <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">It 
+              was the preliminary release, the &quot;shareware&quot;, if you will, 
+              of <i>Project Totengraber.</i> Containing only the first 27 levels 
+              of the game, Phase 1 was a scaled-down version of the final product 
+              put out to pacify the public while I worked on completing Phase 
+              2. If you're bent on getting the old Phase 1 for some reason, don't 
+              let me stop you -- you can still grab it right here.</font></p>
+            <p align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b><a href="files/totenphase1.zip">DOWNLOAD 
+              PROJECT TOTENGRABER: PHASE 1 (v1.01)</a></b><b><br>
+              <br>
+              </b></font></p>
+            <table width="478" border="0" cellspacing="0" cellpadding="1" bgcolor="#CC6666">
+              <tr> 
+                <td> 
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#660000">
+                    <tr> 
+                      <td bgcolor="#CC6666" colspan="7"> 
+                        <div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#000000"><b> 
+                          NAVIGATION</b></font></div>
+                      </td>
+                    </tr>
+                    <tr valign="top"> 
+                      <td rowspan="2"> 
+                        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><img src="images/pixel.gif" width="5" height="1"></font></p>
+                      </td>
+                      <td width="20%" align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><b>Site</b></font></td>
+                      <td width="20%" align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><b>Source 
+                        Code</b> </font></td>
+                      <td width="20%" align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><b>Level 
+                        Design</b> </font></td>
+                      <td width="20%" align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><b>Add-Ons</b></font></td>
+                      <td width="20%" align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><b>Other</b></font></td>
+                      <td rowspan="2"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><img src="images/pixel.gif" width="5" height="1"></font></td>
+                    </tr>
+                    <tr valign="top"> 
+                      <td width="20%" align="left"> 
+                        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><a href="welcome.htm">Home</a><font color="#CCCCCC"><br>
+                          <a href="news.htm">Newswire</a><br>
+                          <a href="updates.htm">Latest Updates</a><br>
+                          <a href="revhistory.htm">Revision History</a></font></font></p>
+                      </td>
+                      <td width="20%" align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><font color="#CCCCCC"><a href="missing.html?p=%2Fsrc-chron.htm">Chronology</a></font><a href="src-what.htm"><br>
+                        What You Need</a><font color="#CCCCCC"><br>
+                        <a href="wolf3d_old/setuptc.htm">Set-up Help</a><br>
+                        <a href="missing.html?p=%2Fsrc-tutorials.htm">Tutorials</a></font></font></td>
+                      <td width="20%" align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><a href="w3dltips.htm">Tips 
+                        (beginner)</a><font color="#FFFFFF"><font color="#CCCCCC"><br>
+                        <a href="missing.html?p=%2Fw3dadvtips.htm">Tips (advanced)</a><br>
+                        <a href="utilities.htm">Utilities</a><br>
+                        </font><a href="reviews/index.htm">Reviews</a></font></font></td>
+                      <td width="20%" align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><a href="addons/add-tcs.htm">TCs<br>
+                        </a><font color="#CCCCCC"><a href="addons/add-wolf.htm">W3D</a> 
+                        | <a href="addons/add-spear.htm">SOD</a><br>
+                        <a href="projects.htm">My Projects</a><br>
+                        <font color="#990000">Submit Add-On</font></font></font></td>
+                      <td width="20%" align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><a href="gamedownload.htm">Get 
+                        the Game!</a><br>
+                        <a href="editorials/index.htm">Editorials</a><br>
+                        <a href="about.htm">About</a><br>
+                        <a href="links.htm">Links</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <p>
+          </td>
+          <td width="20">&nbsp;</td>
+          <td bgcolor="#CC6666" width="2"><img src="images/pixel.gif" width="2" height="1"></td>
+          <td width="20">&nbsp;</td>
+          <td width="200" valign="top"> 
+            <table width="200" border="0" cellspacing="0" cellpadding="1" bgcolor="#CC6666">
+              <tr> 
+                <td> 
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#660000">
+                    <tr> 
+                      <td bgcolor="#CC6666" colspan="3"> 
+                        <div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#000000"><b>QUICK 
+                          DOWNLOAD</b></font></div>
+                      </td>
+                    </tr>
+                    <tr valign="top"> 
+                      <td width="5"> 
+                        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><img src="images/pixel.gif" width="5" height="1"></font></p>
+                      </td>
+                      <td width="100%"> 
+                        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><br>
+                          <b><a href="files/toten-p2final.zip">PROJECT TOTENGRAEBER 
+                          v2.0: <br>
+                          Phase 2/Final</a><br>
+                          </b></font><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#CCCCCC"><b>OS:</b> 
+                          DOS<br>
+                          <b>Format:</b> ZIP file<br>
+                          <b>Download Size:</b> 1.34 MB<br>
+                          <br>
+                          </font><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#FFFFFF"><b><a href="files/toten-developer.zip">Totengraeber 
+                          Developer's Kit</a><br>
+                          </b></font><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#CCCCCC"><b>Includes:</b> 
+                          Complete source code, Mapedit definition files, other 
+                          goodies <br>
+                          <b>Format:</b> ZIP file<br>
+                          <b>Download Size:</b> 1.27 MB<br>
+                          <br>
+                          </font></p>
+                        </td>
+                      <td width="5"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><img src="images/pixel.gif" width="5" height="1"></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            
+            <br>
+            <table width="200" border="0" cellspacing="0" cellpadding="1" bgcolor="#CC6666">
+              <tr> 
+                <td> 
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#660000">
+                    <tr> 
+                      <td bgcolor="#CC6666" colspan="3"> 
+                        <div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#000000"><b>SCREEN 
+                          SHOTS</b></font></div>
+                      </td>
+                    </tr>
+                    <tr valign="top"> 
+                      <td width="5"> 
+                        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><img src="images/pixel.gif" width="5" height="1"></font></p>
+                      </td>
+                      <td width="100%" align="center"> 
+                        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><br>
+                          </font><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#CCCCCC"><img src="images/shots/toten01.gif" width="180" height="131"></font></p>
+                        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#CCCCCC"><img src="images/shots/toten02.gif" width="180" height="131"></font></p>
+                        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#CCCCCC"><img src="images/shots/toten03.gif" width="180" height="131"></font></p>
+                        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#CCCCCC"><img src="images/shots/toten04.gif" width="180" height="131"></font></p>
+                        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#CCCCCC"><img src="images/shots/toten05.gif" width="180" height="131"></font></p>
+                        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#CCCCCC"><img src="images/shots/toten06.gif" width="180" height="131"></font></p>
+                        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#CCCCCC"><img src="images/shots/toten07.gif" width="180" height="131"></font></p>
+                        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#CCCCCC"><img src="images/shots/toten08.gif" width="180" height="131"></font></p>
+                        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#CCCCCC"><img src="images/shots/toten09.gif" width="180" height="131"><br>
+                          <br>
+                          </font></p>
+                      </td>
+                      <td width="5"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><img src="images/pixel.gif" width="5" height="1"></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <p>&nbsp; </p>
+          </td>
+        </tr>
+      </table>
+      <p>&nbsp;</p>
+      </td>
+    <td align="right" valign="top" background="images/rightedge_tile.gif" height="100%">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td><img src="images/corner_bl.gif" width="20" height="24"></td>
+    <td><img src="images/bottom_copyright.gif" width="720" height="24"></td>
+    <td><img src="images/corner_br.gif" width="20" height="24"></td>
+  </tr>
+</table>
+<script src="archive-map.js"></script><script src="archive-shim.js"></script></body>
+</html>

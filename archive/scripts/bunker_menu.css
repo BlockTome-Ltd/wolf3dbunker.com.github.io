@@ -1,0 +1,7 @@
+a.menu {text-decoration:none; color:#cccccc}
+a.menu:hover {text-decoration:none; color:#ffffff}
+a.menuTitle {text-decoration:none; color:#cccc00}
+a.menuTitle:hover {text-decoration:none; color:#ffffff}
+#titleText {font-size:12px; color:#cccc00; font-family:verdana,arial,helvetica,sans-serif; font-weight: bold;}
+#menuText {font-size:9px; color:#000000; font-family:verdana,arial,helvetica,sans-serif;}
+#menuHolder {position:relative; left:0; top:0; visibility:visible; z-index:1;}
