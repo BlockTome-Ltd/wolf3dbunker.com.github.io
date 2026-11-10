@@ -1,0 +1,21 @@
+/*-----------------------------------------*/
+/*  B.J. ROWAN'S WOLFENSTEIN RECORDS ROOM  */
+/*         FIXED LAYOUT STYLE SHEET        */
+/*-----------------------------------------*/
+
+#content {
+	width: 620px;
+}
+
+#content.screenshots {
+	width: 700px;
+}
+
+#styleswitcher {
+	position: fixed;
+	top: 85px;
+	left: 655px;
+	width: 155px;
+	padding: 0 10px;
+	text-align: right;
+}

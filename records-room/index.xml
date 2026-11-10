@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>B.J. Rowan&#39;s Wolfenstein Records Room</title>
+    <link>https://wolf3d.bjrowan.com/</link>
+    <description>Recent content on B.J. Rowan&#39;s Wolfenstein Records Room</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 29 Apr 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://wolf3d.bjrowan.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Desperate Measures: Episode 2 released.</title>
+      <link>https://wolf3d.bjrowan.com/updates/2012-04-29-desperate-measures-episode-2-released/</link>
+      <pubDate>Sun, 29 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://wolf3d.bjrowan.com/updates/2012-04-29-desperate-measures-episode-2-released/</guid>
+      <description>After a five-year hiatus, episode two of Desperate Measures has arrived — and you can download it right now. Since my last update, I let my &amp;ldquo;back to basics&amp;rdquo; mantra slip a little bit, as you might guess from the fact that there&amp;rsquo;s now a VSWAP packed in with episode two, containing some new wall textures and sound effects. That&amp;rsquo;s all, I swear.
+Work is underway on episode three as I write this, and I&amp;rsquo;m also penning that level design handbook that I&amp;rsquo;ve been threatening to write since, oh, the dawn of time. It&amp;rsquo;s going to provide some guidance and ideas for those who are designing levels in the classical style.
+I&amp;rsquo;ve also served up a tidbit of history with the Conflict in the Fatherland Developer Journal, a collection of excerpts from my personal notes that were written during the development of CITF.</description>
+    </item>
+    
+    <item>
+      <title>Desperate Measures</title>
+      <link>https://wolf3d.bjrowan.com/addons/desperate-measures/</link>
+      <pubDate>Sat, 23 Jun 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://wolf3d.bjrowan.com/addons/desperate-measures/</guid>
+      <description>Back to Basics. The first entirely new Wolfenstein project from this author in seven years, Desperate Measures seeks to be a spiritual successor to my own Conflict In The Fatherland. Inspired by simple yet effective add-ons like Acktung, it abandons the glitz and glamor of too many custom graphics, revolutionary engine changes and massive storylines, and instead delivers classical Wolfenstein at its very best.
+Totaling an ambitious 60 levels, Desperate Measures will be released by-the-episode, providing gamers with an ongoing pipeline of new material. Featuring reimagined stories based on the original Wolfenstein episodes, minimalist source code changes (tilemap control of ceiling colors and music, dynamic secret elevator back maps, bug fixes, etc.) and a return to the classical level design techniques of yesteryear, Desperate Measures is out to prove that less truly is more.
+Update 2012.04.29 — EPISODE TWO Released! The continuing saga of Desperate Measures is actually continuing! Download episode two and blaze your way through ten new levels set in Erlangen, where B.J. Blazkowicz is chasing down the Nazi bioweapons that escaped his grasp at the end of episode one. Can you prevent the Giftkrieg from launching? Full details are included in the readme, or see the online documentation.</description>
+    </item>
+    
+    <item>
+      <title>Desperate times call for desperate measures.</title>
+      <link>https://wolf3d.bjrowan.com/updates/2007-06-23-desperate-times-call-for-desperate-measures/</link>
+      <pubDate>Sat, 23 Jun 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://wolf3d.bjrowan.com/updates/2007-06-23-desperate-times-call-for-desperate-measures/</guid>
+      <description>I don&amp;rsquo;t often think about making new Wolfenstein levels — hey, it&amp;rsquo;s 2007 — but that inspiration has randomly struck me sporadically in the past few years. It finally struck enough times to produce the first episode in what may wind up being my next 60-level map pack, Desperate Measures — codename BJW60IV.
+Yeah, you read that right — there&amp;rsquo;s a whole episode already finished, and you can play it right now. No, seriously. Go here and read all about it. I can&amp;rsquo;t say for certain whether I&amp;rsquo;ll actually finish any more, but sometimes miracles do happen. Tah.</description>
+    </item>
+    
+    <item>
+      <title>Site launched.</title>
+      <link>https://wolf3d.bjrowan.com/updates/2007-06-22-site-launched/</link>
+      <pubDate>Fri, 22 Jun 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://wolf3d.bjrowan.com/updates/2007-06-22-site-launched/</guid>
+      <description>After five years of vacuum, I&amp;rsquo;ve launched this new Wolfenstein website to serve as the official home for my own projects, both current and historical. Even to this day, while there&amp;rsquo;s still a healthy distribution of my work on other sites, it seems only right that the creator of such work should offer it directly. And so, here we are.
+Those of you who are looking to see more of me on the Wolfenstein scene may be disappointed, as the launch of this site doesn&amp;rsquo;t constitute any kind of grand re-entrance on my part. However, as it happens, I am in the midst of resurrecting an old project I once alluded to, but never finished — so while I don&amp;rsquo;t intend to become a pillar of the community, that community may yet benefit from more of my work, if it wants to.</description>
+    </item>
+    
+    <item>
+      <title>Project Totengraeber</title>
+      <link>https://wolf3d.bjrowan.com/addons/project-totengraeber/</link>
+      <pubDate>Sat, 23 Dec 2000 00:00:00 +0000</pubDate>
+      
+      <guid>https://wolf3d.bjrowan.com/addons/project-totengraeber/</guid>
+      <description>The Big One. Project Totengraeber, at the time of its release, represented the culmination of everything I&amp;rsquo;d hoped Wolfenstein editing could be. It&amp;rsquo;s a completely self-contained Wolfenstein mission with 48 levels, a modified engine, remastered graphics, new sound effects, and a cinematic story based on the original episode two, &amp;ldquo;Operation: Eisenfaust.&amp;rdquo;
+The Allies have learned of Doctor Schabbs&amp;rsquo; plan to resurrect an army of undead soldiers, a plan codenamed Project Totengraeber (Gravedigger). As B.J. Blazkowicz, you are sent behind enemy lines to infiltrate a network of Nazi strongholds, each connected by subterranean tunnels. You must work your way to Schabbs&amp;rsquo; secret lab and stop him from unleashing his mutant army upon the world.
+This was my first foray into working with the Wolfenstein source code, and I managed to accomplish more than I had planned. Some of the new engine features include seamless level progression (one continuous 48-level episode), four available keys, new health bonuses and larger ammo pickups, ambient sounds, chainguns that jam and must be replaced, new end art and help screens, and lots more stuff.
+Totengraeber was a landmark achievement in the Wolfenstein community at the time of its initial release, combining several elements of modification that had either not yet been seen, or were not yet in wide use.</description>
+    </item>
+    
+    <item>
+      <title>Conflict In The Fatherland</title>
+      <link>https://wolf3d.bjrowan.com/addons/conflict-fatherland/</link>
+      <pubDate>Fri, 01 Jan 1999 00:00:00 +0000</pubDate>
+      
+      <guid>https://wolf3d.bjrowan.com/addons/conflict-fatherland/</guid>
+      <description>A Triumph of Classical Design. Serving as a follow-up to my first map set, Conflict In The Fatherland proves that I learned a lot from my first 60 levels. The overall design and atmosphere is a significant improvement from The Renovation, with greater attention to detail paid to each level than to an entire episode in my previous set. This is, quite simply, a triumph of classical design, created by a Wolfenstein purist for fellow purists at heart.
+Widely regarded as my best work, CITF takes the player through six episodes of Nazi-blasting fun, touring locales such as an SS training center, Giftmacher&amp;rsquo;s subterranean bunker and a weapons manufacturing plant. The stories are relatively unchanged from the originals (with the exception of episode one), but each has a slightly different twist.
+This add-on includes some new graphics and sound effects. The brownshirted SA receive red Nazi armbands, SS officers wear the traditional black uniforms, and the deaths of each guard have been made gorier. There are new weapon sound effects, new SA death sounds (voiced by yours truly), a new design for the chaingun, and the addition of a couple of new sprites and wall textures (most notably the red ceiling light, which received a lot of use).</description>
+    </item>
+    
+    <item>
+      <title>The Renovation</title>
+      <link>https://wolf3d.bjrowan.com/addons/renovation/</link>
+      <pubDate>Mon, 01 Aug 1994 00:00:00 +0000</pubDate>
+      
+      <guid>https://wolf3d.bjrowan.com/addons/renovation/</guid>
+      <description>The Adventure Begins. The Renovation is a collection of my first 60 Wolfenstein levels, assembled into the traditional 6-episode format of 10 levels each. Dating back to 1994, it&amp;rsquo;s a classic Wolf add-on featuring only new levels, and requiring the full registered version of Wolfenstein to play.
+A rudimentary story was developed alongside — for example, episode two sees you fighting Dr. Schabbs&amp;rsquo; mutant army in settings such as a mutation hospital, while episode five takes you to an insane asylum where the last vestiges of Schabbs&amp;rsquo; maniacal undead have broken loose and are wreaking havoc.
+While certainly not groundbreaking, this collection was one of the more &amp;ldquo;true to the original&amp;rdquo; add-ons among the first generation. It does, however, suffer from a number of aesthetic failings that I would never repeat today. There are some gems here, and there are also some stinkers. But it&amp;rsquo;s old-school Wolf fun at some of its former-day best.
+Perhaps more than anything else, The Renovation now serves as a window through time, back to the early days of Wolfenstein map-making, when designers were still learning the ropes and emulating id&amp;rsquo;s design aesthetic. While practically an embarrassment today, I offer these levels as a look back at where it all began.</description>
+    </item>
+    
+    <item>
+      <title>About B.J.</title>
+      <link>https://wolf3d.bjrowan.com/about/about-bj/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wolf3d.bjrowan.com/about/about-bj/</guid>
+      <description>Signs his homework B. Blaze. So who is this B.J. Rowan character, anyway? Well, for starters, those are my real initials. No joke.
+I got the shareware version of Wolfenstein 3-D from a kid down the street in early 1993, and history promptly wrote itself. I had simply never had so much fun with a computer game. Because our PC was set up in the basement, I spent many a night in my own cold, dank dungeon, exploring the dangerous and thrilling corridors of one Nazi stronghold after another. I explored every nook and cranny, scrubbed every damn wall and unlocked every secret level. I worked German expletives into my everyday language. In short, I was an übergeek.
+By today&amp;rsquo;s standards, I&amp;rsquo;m an old-school Wolfer — there for the glory days of studying hint books, calling Apogee and saying Aardwolf, developing custom levels with some of the earliest tools available. I come from an era before modifying the source was even possible, when the height of mapping perfection was to meet or surpass the quality, feel and atmosphere of id Software&amp;rsquo;s original maps. So it should come as no surprise that &amp;ldquo;classical realism&amp;rdquo; has always been my school of thought in Wolf3D level design.</description>
+    </item>
+    
+    <item>
+      <title>B.J. Rowan&#39;s Level Design Tips</title>
+      <link>https://wolf3d.bjrowan.com/technique/bjrowan-map-tips/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wolf3d.bjrowan.com/technique/bjrowan-map-tips/</guid>
+      <description>Author&#39;s Note: At the moment, the illustrations from this guide have gone missing. I&#39;ve left placeholders in their stead until I can track down the originals. Wolfenstein 3-D and Spear of Destiny Tips on Designing Good Levels By Brian J. &amp;ldquo;Blazkowicz&amp;rdquo; Rowan
+Designer of &amp;ldquo;The Renovation&amp;rdquo; and &amp;ldquo;Conflict in the Fatherland&amp;rdquo;
+&amp;copy; Copyright 1994-1999 
+ Table of Contents 1.0 - Introduction to Wolfenstein Level Editing
+&amp;nbsp;&amp;nbsp;&amp;nbsp;1.1 - Thanks and Praise to id Software
+2.0 - Description of the Level Editors
+&amp;nbsp;&amp;nbsp;&amp;nbsp;2.1 - Where Are These Editors Available?
+&amp;nbsp;&amp;nbsp;&amp;nbsp;2.2 - I Keep Getting &amp;ldquo;Runtime Error 200&amp;rdquo; When I Run Mapedit; Why?
+&amp;nbsp;&amp;nbsp;&amp;nbsp;2.3 - Differences Between Wolf3D and SOD
+&amp;nbsp;&amp;nbsp;&amp;nbsp;2.4 - Editing Spear of Destiny Additional Missions 2 &amp;amp; 3
+3.0 - Designing New Levels: MAP mode
+&amp;nbsp;&amp;nbsp;&amp;nbsp;3.1 - Getting Started
+&amp;nbsp;&amp;nbsp;&amp;nbsp;3.2 - Walls
+&amp;nbsp;&amp;nbsp;&amp;nbsp;3.3 - Floor Codes
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;3.31 - What Happens if you Mess Up&amp;hellip;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;3.32 - &amp;ldquo;Deaf Guard&amp;rdquo; Floor Code Errors
+&amp;nbsp;&amp;nbsp; 3.4 - Doors
+&amp;nbsp;&amp;nbsp; 3.5 - Secret Doors (Pushwalls)
+&amp;nbsp;&amp;nbsp; 3.6 - Elevators
+&amp;nbsp;&amp;nbsp; 3.7 - Secret Elevators
+&amp;nbsp;&amp;nbsp;&amp;nbsp;3.8 - Overall Tips and Strategies for Level Design
+&amp;nbsp;&amp;nbsp;&amp;nbsp;3.9 - Ceiling Colors
+4.0 - Designing New Levels: OBJECT mode
+&amp;nbsp;&amp;nbsp;&amp;nbsp;4.1 - Guards
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;4.11 - Moving (Patrolling) Guards
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;4.12 - Stationary Guards</description>
+    </item>
+    
+    <item>
+      <title>Conflict In The Fatherland: Comments</title>
+      <link>https://wolf3d.bjrowan.com/addons/conflict-fatherland-comments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wolf3d.bjrowan.com/addons/conflict-fatherland-comments/</guid>
+      <description>Comment on Conflict In The Fatherland Want to leave me a note or ask a question about this add-on? Do it here.</description>
+    </item>
+    
+    <item>
+      <title>Conflict In The Fatherland: Developer Journal</title>
+      <link>https://wolf3d.bjrowan.com/addons/conflict-fatherland-journal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wolf3d.bjrowan.com/addons/conflict-fatherland-journal/</guid>
+      <description>Developer Journal: Conflict in the Fatherland In the 1990s I sporadically kept a journal, and upon recent review of some of its entries, I discovered the occasional remark about how development on Conflict in the Fatherland was going. Collected below is a chronology of the notes I kept on the project, sparse as they are.
+November 14, 1994 This day&#39;s entry contains the first recorded mention of new Wolfenstein levels being designed for the as-yet unnamed _Conflict in the Fatherland_ project, and reveals that I was working on E1L3. November 21, 1994 I seem to be having a Wolfenstein level design &amp;ldquo;writer&amp;rsquo;s block&amp;rdquo;. Over the course of the weekend, I have ravenously generated seven of the best Wolfenstein levels I have ever designed. I got started on an eighth and supposedly finished it, but it&amp;rsquo;s very small and I was simply too lazy to make a full-fledged level out of it; instead I just hid both keys and the elevator behind separate hidden doors to make the level seem like it takes more time to complete.
+I&amp;rsquo;ll probably end up leaving it like it is, but if I don&amp;rsquo;t, I&amp;rsquo;ll place that floor in the level 1 slot for another episode, as its almost nonexistent difficulty really warrants such a position and only such a position.</description>
+    </item>
+    
+    <item>
+      <title>Conflict In The Fatherland: Documentation</title>
+      <link>https://wolf3d.bjrowan.com/addons/conflict-fatherland-docs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wolf3d.bjrowan.com/addons/conflict-fatherland-docs/</guid>
+      <description>Author&#39;s Note: Following is a portion of the original readme file included with Conflict In The Fatherland. The complete file is packaged with your download. Welcome to 60 New Levels of Absolute Carnage! Welcome to The Renovation II: Conflict in the Fatherland, the sequel to the reknowned 60-level conversion entitled The Renovation, released by Apogee Software in the &amp;ldquo;Wolfenstein Super Upgrade&amp;rdquo; pack. Each and every level in Conflict in the Fatherland is hand-crafted by expert level designer Brian &amp;ldquo;B.J. Blazkowicz&amp;rdquo; Rowan, a total Wolfenstein addict for over 4 years now. More attention is paid to graphic appearance and playability than ever before&amp;hellip;these levels are right on par with id Software&amp;rsquo;s original levels. As the designer, I made sure that all the levels offered a good combination of hard-core, Nazi-blasting action, and suspenseful atmosphere induced by multiple secret rooms and realistic environments. And it&amp;rsquo;s all backed by an involving storyline.
+System Requirements You will need a 6-episode registered version of Wolfenstein for these levels to work. You can use either v1.4 or v1.2 (also called v1.11). To find out if you have a qualified version, check to make sure your WOLF3D.EXE file date is 6/22/92 or later. The altered graphics file (VSWAP.</description>
+    </item>
+    
+    <item>
+      <title>Conflict In The Fatherland: Screenshots</title>
+      <link>https://wolf3d.bjrowan.com/addons/conflict-fatherland-screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wolf3d.bjrowan.com/addons/conflict-fatherland-screenshots/</guid>
+      <description> Screenshots from Conflict In The Fatherland   </description>
+    </item>
+    
+    <item>
+      <title>Desperate Measures: Comments</title>
+      <link>https://wolf3d.bjrowan.com/addons/desperate-measures-comments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wolf3d.bjrowan.com/addons/desperate-measures-comments/</guid>
+      <description>Comment on Desperate Measures Want to leave me a note or ask a question about this add-on? Do it here.</description>
+    </item>
+    
+    <item>
+      <title>Desperate Measures: Documentation</title>
+      <link>https://wolf3d.bjrowan.com/addons/desperate-measures-docs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wolf3d.bjrowan.com/addons/desperate-measures-docs/</guid>
+      <description>Author&#39;s Note: Following is a portion of the original readme file included with Desperate Measures. The complete file is packaged with your download. The Story Episode One: The Stronghold While the commanders of the Schutzstaffel gather for strategic briefings at the SS-Hauptamt, B.J. Blazkowicz is sent to infiltrate a key Nazi stronghold on Allied suspicion of biological weapons being stored there. With much of the stronghold&amp;rsquo;s SS presence diverted, a small window of opportunity exists for Blazkowicz to penetrate an otherwise impenetrable fortress.
+If the Nazis have indeed developed the kind of bio-weapons the Allies have heard rumors about, it could spell disaster for the war effort. Blazkowicz&amp;rsquo;s mission is to confirm or deny the presence of these weapons, and if they exist, destroy them.
+New Allied intelligence suggests that Obersturmbannführer Hans Grosse, normally in command of nearby Castle Wolfenstein, has been reassigned. It is possible that he now oversees the stronghold that is Blazkowicz&amp;rsquo;s next target. Utmost caution should be exercised, as Hans&amp;rsquo; monstrous history of war crimes speaks for itself.
+Episode Two: Giftkrieg Hans Grosse is dead, but the deadly biological agent the Allies sought has already been taken elsewhere. According to manifests, they are now in the heavily-guarded fortress at Erlangen, where mass-scale production of deadly toxic weapons is imminent.</description>
+    </item>
+    
+    <item>
+      <title>Desperate Measures: Screenshots</title>
+      <link>https://wolf3d.bjrowan.com/addons/desperate-measures-screenshots-e2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wolf3d.bjrowan.com/addons/desperate-measures-screenshots-e2/</guid>
+      <description> Screenshots from Desperate Measures Episode: One Two Three Four Five Six    Episode: One Two Three Four Five Six  </description>
+    </item>
+    
+    <item>
+      <title>Desperate Measures: Screenshots</title>
+      <link>https://wolf3d.bjrowan.com/addons/desperate-measures-screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wolf3d.bjrowan.com/addons/desperate-measures-screenshots/</guid>
+      <description> Screenshots from Desperate Measures Episode: One Two Three Four Five Six    Episode: One Two Three Four Five Six  </description>
+    </item>
+    
+    <item>
+      <title>Project Totengraeber: Documentation</title>
+      <link>https://wolf3d.bjrowan.com/addons/project-totengraeber-docs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wolf3d.bjrowan.com/addons/project-totengraeber-docs/</guid>
+      <description>Author&#39;s Note: Following is a portion of the original readme file included with Project Totengraeber. The complete file is packaged with your download. One Evil Nazi Scheme. One Momentous Mission. One Last Chance to Save Humanity. The Story It is 1942, at the height of the Second World War, and the Allies are fighting a fierce battle against the Axis Powers in Europe, and the conflict looks far from over. Worse, the Allies have reason to believe that the Nazis may be amassing a new army of undead soldiers to do battle for them. It is rumored that a top Nazi scientist, one Arzt Schabbs (generally considered mad by his former colleagues) has found a way to resurrect soldiers who have been killed in battle, graft a third arm onto their chests, and send them back to the front lines - in a macabre experiment known as &amp;ldquo;Project Totengraeber&amp;rdquo; (effectively, &amp;ldquo;Gravedigger&amp;rdquo;). Some such undead soldiers may even receive special conditioning to carry out suicide missions no sane man would ever accept. With no concern for their own lives, only a bitter, ingrained desire to kill, Schabbs&amp;rsquo; zombies would have nothing to lose in a firefight, attacking relentlessly and with unimaginable determination.</description>
+    </item>
+    
+    <item>
+      <title>Project Totengraeber: Screenshots</title>
+      <link>https://wolf3d.bjrowan.com/addons/project-totengraeber-screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wolf3d.bjrowan.com/addons/project-totengraeber-screenshots/</guid>
+      <description> Screenshots from Project Totengraeber   </description>
+    </item>
+    
+    <item>
+      <title>The Renovation: Documentation</title>
+      <link>https://wolf3d.bjrowan.com/addons/renovation-docs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wolf3d.bjrowan.com/addons/renovation-docs/</guid>
+      <description>Author&#39;s Note: Following is a portion of the original readme file included with The Renovation. The complete file is packaged with your download.  -------------------------------------- | WOLF3D&#39;S RENOVATION | | Additional Levels | -------------------------------------- (C)opyright 1994 by Brian Rowan **** IMPORTANT NOTICE **** These additional levels are in no way affiliated with Apogee Software or ID Software. If you experience any problems while playing these levels, DO NOT CONTACT EITHER OF THESE TWO COMPANIES! They will not provide you with any support for modified games. If you get any problems, please contact me (the author). My E-mail addresses are listed below. **** **** **** ======================================================================= Title : Wolfenstein 3-D: The Renovation Author : Brian J. &#34;B.J. Blazkowicz&#34; Rowan Misc. Author Info : I am a fan of Wolfenstein, Doom, Spear of Destiny, Blake Stone, Corridor 7 - you name it; if it uses a 3-D action game engine, I completely approve. Commitment to Quality : That probably sounds like a scam these days, but it&#39;s true: I wanted to make these Wolf3D levels so impressive that you would want to keep playing them, or just remember that one room and that feeling of &#34;being there&#34; that it gave you, as did id Software&#39;s original levels (well, they did for me).</description>
+    </item>
+    
+    <item>
+      <title>The Renovation: Screenshots</title>
+      <link>https://wolf3d.bjrowan.com/addons/renovation-screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wolf3d.bjrowan.com/addons/renovation-screenshots/</guid>
+      <description> Screenshots from The Renovation   </description>
+    </item>
+    
+  </channel>
+</rss>

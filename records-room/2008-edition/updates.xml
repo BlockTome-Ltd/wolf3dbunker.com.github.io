@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+
+<channel>
+	<title>B.J. Rowan's Wolfenstein Records Room: Latest Updates</title>
+	<link>http://wolf3d.bjrowan.com/updates.xml</link>
+	<description>The latest happenings at the Wolfenstein Records Room, including the most recent additions to B.J.'s upcoming Wolfenstein add-on, "Desperate Measures."</description>
+
+	<language>en</language>
+
+	<item>
+		<title>Desperate times call for desperate measures.</title>
+		<link>http://wolf3d.bjrowan.com/index.php#thelatest</link>
+		<description>I don't often think about making new Wolfenstein levels - hey, it's 2007 - but that inspiration has randomly struck me sporadically in the past few years. It finally struck enough times to produce the first episode in what may wind up being my next 60-level map pack, Desperate Measures - codename BJW60IV.</description>
+		<pubDate>Sat, 23 Jun 2007 12:00:00 -0500</pubDate>
+	</item>
+
+	<item>
+		<title>Site launched.</title>
+		<link>http://wolf3d.bjrowan.com/index.php#thelatest</link>
+		<description>After five years of vacuum, I've launched this new Wolfenstein website to serve as the official home for my own projects, both current and historical. Even to this day, while there's still a healthy distribution of my work on other sites, it seems only right that the creator of such work should offer it directly. And so, here we are.</description>
+		<pubDate>Fri, 22 Jun 2007 12:00:00 -0500</pubDate>
+	</item>
+
+</channel>
+</rss>

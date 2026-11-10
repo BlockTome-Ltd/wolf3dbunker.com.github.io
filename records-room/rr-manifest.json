@@ -1,0 +1,1066 @@
+{
+  "generated": "2026-11-10T20:27:50.974Z",
+  "sources": [
+    "https://wolf3d.bjrowan.com/ crawled 2026-11-10 (every linked page, image, stylesheet, script and download, plus unlinked files still on the server)",
+    "Wayback Machine captures of the 2008-2019 PHP edition, in 2008-edition/"
+  ],
+  "files": [
+    {
+      "path": "2008-edition/about/aboutbj.html",
+      "origin": "web.archive.org (wolf3d.bjrowan.com 2008-2019 PHP edition)",
+      "bytes": 7683,
+      "captured": "20081120120641"
+    },
+    {
+      "path": "2008-edition/about/index.html",
+      "origin": "web.archive.org (wolf3d.bjrowan.com 2008-2019 PHP edition)",
+      "bytes": 5379,
+      "captured": "20081120120104"
+    },
+    {
+      "path": "2008-edition/addons/conflict_fatherland.html",
+      "origin": "web.archive.org (wolf3d.bjrowan.com 2008-2019 PHP edition)",
+      "bytes": 9819,
+      "captured": "20081120122405"
+    },
+    {
+      "path": "2008-edition/addons/conflict_fatherland_comments.html",
+      "origin": "web.archive.org (wolf3d.bjrowan.com 2008-2019 PHP edition)",
+      "bytes": 2808,
+      "captured": "20160623135039"
+    },
+    {
+      "path": "2008-edition/addons/conflict_fatherland_docs.html",
+      "origin": "web.archive.org (wolf3d.bjrowan.com 2008-2019 PHP edition)",
+      "bytes": 20896,
+      "captured": "20090106165838"
+    },
+    {
+      "path": "2008-edition/addons/conflict_fatherland_journal.html",
+      "origin": "web.archive.org (wolf3d.bjrowan.com 2008-2019 PHP edition)",
+      "bytes": 8976,
+      "captured": "20160319064341"
+    },
+    {
+      "path": "2008-edition/addons/conflict_fatherland_screenshots.html",
+      "origin": "web.archive.org (wolf3d.bjrowan.com 2008-2019 PHP edition)",
+      "bytes": 4402,
+      "captured": "20160623062036"
+    },
+    {
+      "path": "2008-edition/addons/desperate_measures.html",
+      "origin": "web.archive.org (wolf3d.bjrowan.com 2008-2019 PHP edition)",
+      "bytes": 9027,
+      "captured": "20081120123953"
+    },
+    {
+      "path": "2008-edition/addons/desperate_measures_comments.html",
+      "origin": "web.archive.org (wolf3d.bjrowan.com 2008-2019 PHP edition)",
+      "bytes": 2707,
+      "captured": "20160622145636"
+    },
+    {
+      "path": "2008-edition/addons/desperate_measures_docs.html",
+      "origin": "web.archive.org (wolf3d.bjrowan.com 2008-2019 PHP edition)",
+      "bytes": 10315,
+      "captured": "20090106170446"
+    },
+    {
+      "path": "2008-edition/addons/desperate_measures_screenshots.html",
+      "origin": "web.archive.org (wolf3d.bjrowan.com 2008-2019 PHP edition)",
+      "bytes": 5531,
+      "captured": "20090106163322"
+    },
+    {
+      "path": "2008-edition/addons/index.html",
+      "origin": "web.archive.org (wolf3d.bjrowan.com 2008-2019 PHP edition)",
+      "bytes": 5928,
+      "captured": "20090106163747"
+    },
+    {
+      "path": "2008-edition/addons/project_totengraeber.html",
+      "origin": "web.archive.org (wolf3d.bjrowan.com 2008-2019 PHP edition)",
+      "bytes": 11359,
+      "captured": "20081120121229"
+    },
+    {
+      "path": "2008-edition/addons/project_totengraeber_docs.html",
+      "origin": "web.archive.org (wolf3d.bjrowan.com 2008-2019 PHP edition)",
+      "bytes": 13520,
+      "captured": "20090106164942"
+    },
+    {
+      "path": "2008-edition/addons/project_totengraeber_screenshots.html",
+      "origin": "web.archive.org (wolf3d.bjrowan.com 2008-2019 PHP edition)",
+      "bytes": 4598,
+      "captured": "20090106170834"
+    },
+    {
+      "path": "2008-edition/addons/renovation.html",
+      "origin": "web.archive.org (wolf3d.bjrowan.com 2008-2019 PHP edition)",
+      "bytes": 8875,
+      "captured": "20081120123658"
+    },
+    {
+      "path": "2008-edition/addons/renovation_docs.html",
+      "origin": "web.archive.org (wolf3d.bjrowan.com 2008-2019 PHP edition)",
+      "bytes": 17551,
+      "captured": "20090106164514"
+    },
+    {
+      "path": "2008-edition/addons/renovation_screenshots.html",
+      "origin": "web.archive.org (wolf3d.bjrowan.com 2008-2019 PHP edition)",
+      "bytes": 3797,
+      "captured": "20090106164148"
+    },
+    {
+      "path": "2008-edition/includes/common.css",
+      "origin": "web.archive.org (wolf3d.bjrowan.com 2008-2019 PHP edition)",
+      "bytes": 6078,
+      "captured": "20130605121708"
+    },
+    {
+      "path": "2008-edition/includes/fixed.css",
+      "origin": "web.archive.org (wolf3d.bjrowan.com 2008-2019 PHP edition)",
+      "bytes": 370,
+      "captured": "20131108031857"
+    },
+    {
+      "path": "2008-edition/includes/fluid.css",
+      "origin": "web.archive.org (wolf3d.bjrowan.com 2008-2019 PHP edition)",
+      "bytes": 328,
+      "captured": "20130605115319"
+    },
+    {
+      "path": "2008-edition/includes/styleswitcher.js",
+      "origin": "web.archive.org (wolf3d.bjrowan.com 2008-2019 PHP edition)",
+      "bytes": 1839,
+      "captured": "20131217204541"
+    },
+    {
+      "path": "2008-edition/index.html",
+      "origin": "web.archive.org (wolf3d.bjrowan.com 2008-2019 PHP edition)",
+      "bytes": 6954,
+      "captured": "20190527212747"
+    },
+    {
+      "path": "2008-edition/technique/index.html",
+      "origin": "web.archive.org (wolf3d.bjrowan.com 2008-2019 PHP edition)",
+      "bytes": 3692,
+      "captured": "20081120121802"
+    },
+    {
+      "path": "2008-edition/updates.xml",
+      "origin": "web.archive.org (wolf3d.bjrowan.com 2008-2019 PHP edition)",
+      "bytes": 1500,
+      "captured": "20081120122845"
+    },
+    {
+      "path": "404.html",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 4256,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "about/about-bj/index.html",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 10975,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "about/index.html",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 6604,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "addons/conflict-fatherland-comments/index.html",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 6348,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "addons/conflict-fatherland-docs/index.html",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 25449,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "addons/conflict-fatherland-journal/index.html",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 14132,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "addons/conflict-fatherland-screenshots/index.html",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 6583,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "addons/conflict-fatherland/index.html",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 14453,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "addons/desperate-measures-comments/index.html",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 6185,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "addons/desperate-measures-docs/index.html",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 14181,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "addons/desperate-measures-screenshots-e2/index.html",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 6844,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "addons/desperate-measures-screenshots/index.html",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 6575,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "addons/desperate-measures/index.html",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 15036,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "addons/index.html",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 7751,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "addons/project-totengraeber-docs/index.html",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 17006,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "addons/project-totengraeber-screenshots/index.html",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 5566,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "addons/project-totengraeber/index.html",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 15796,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "addons/renovation-docs/index.html",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 21088,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "addons/renovation-screenshots/index.html",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 4718,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "addons/renovation/index.html",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 13100,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "categories/index.html",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 3423,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "css/common.min.07c0be57c23364f350b08e7afdc71a96eb164944056dd9c48ea3211778d9a94d.css",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 6133,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "css/fixed.min.48cdf14124b213d69a76df1e9d9c4b8f0544c4d802993e661dd1a41ab0ad0ec7.css",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 156,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "css/fluid.min.0a8cda2c3ce0e44e12a554f11c770abcef7d40ce85c82d0da6a232fa4b291c4e.css",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 114,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "favicon.ico",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 3638,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "files/bjdm_e1.zip",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 349308,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "files/bjdm_e2.zip",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 1080809,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "files/bjw60.zip",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 110549,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "files/bjw60ii.zip",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 804372,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "files/maped84.zip",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 326151,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "files/maptips.txt",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 33773,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "files/toten-developer.zip",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 1332500,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "files/toten-p2final.zip",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 1410384,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "files/totenphase1.zip",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 1328610,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "files/tppatch.zip",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 9623,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/arrow_red.gif",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 49,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/bjbanner.gif",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 20918,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/btn_fixed.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 171,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/btn_fluid.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 203,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/citf.jpg",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 4647,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/icon_feed.gif",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 434,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/layout.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 417,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/maptips/image1.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 173,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/maptips/image2.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 1442,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/maptips/image3.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 947,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/maptips/image4.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 1326,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/maptips/image5.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 874,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/maptips/image6.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 1332,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/maptips/image7.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 920,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/maptips/image8.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 192,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/maptips/image9.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 223,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/masthead.jpg",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 10789,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/measures.jpg",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 5319,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/navbar_bkg.jpg",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 2012,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/news_2007-06-17.jpg",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 3184,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/news_2007-06-18.jpg",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 3182,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/news_2012-04-29.jpg",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 3367,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/quick_facts.gif",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 629,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/renovation.jpg",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 4486,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/bjdm_e1_01.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 10514,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/bjdm_e1_02.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 10876,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/bjdm_e1_03.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 8822,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/bjdm_e1_04.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 10817,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/bjdm_e1_05.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 8764,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/bjdm_e1_06.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 10331,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/bjdm_e1_07.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 10485,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/bjdm_e1_08.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 10585,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/bjdm_e1_09.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 11421,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/bjdm_e1_10.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 7922,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/bjdm_e1_11.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 8192,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/bjdm_e1_12.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 10872,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/bjdm_e1_13.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 8716,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/bjdm_e1_14.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 7920,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/bjdm_e1_15.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 7731,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/bjdm_e1_16.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 11329,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/bjdm_e2_01.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 9558,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/bjdm_e2_02.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 9813,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/bjdm_e2_03.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 11223,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/bjdm_e2_04.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 9056,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/bjdm_e2_05.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 12908,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/bjdm_e2_06.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 9087,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/bjdm_e2_07.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 10309,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/bjdm_e2_08.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 8490,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/bjdm_e2_09.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 9513,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/bjdm_e2_10.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 9277,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/bjdm_e2_11.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 9921,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/bjdm_e2_12.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 10028,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/bjdm_e2_13.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 13548,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/bjdm_e2_14.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 7930,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/bjdm_e2_15.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 9553,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/bjdm_e2_16.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 10843,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/bjdm_e2_18.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 8341,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/bjdm_e2_19.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 9690,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/citf_01.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 14059,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/citf_02.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 14624,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/citf_03.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 10695,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/citf_04.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 10518,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/citf_05.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 11090,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/citf_06.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 9067,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/citf_07.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 8144,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/citf_08.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 10283,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/citf_09.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 11643,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/citf_10.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 9976,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/citf_11.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 11117,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/citf_12.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 11966,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/citf_13.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 10752,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/citf_14.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 8326,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/citf_15.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 9700,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/citf_16.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 9940,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/citf_17.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 8799,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/citf_18.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 10311,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/citf_19.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 10372,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/citf_20.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 8995,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/citf_21.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 9777,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/citf_22.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 9554,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/renovation_01.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 7284,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/renovation_02.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 12189,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/renovation_03.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 11241,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/renovation_04.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 8260,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/renovation_05.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 11148,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/renovation_06.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 12872,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/renovation_07.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 9725,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/renovation_08.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 9825,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/totengraeber_01.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 10704,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/totengraeber_02.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 11621,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/totengraeber_03.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 12884,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/totengraeber_04.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 14987,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/totengraeber_05.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 14774,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/totengraeber_06.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 13703,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/totengraeber_07.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 12238,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/totengraeber_08.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 12765,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/totengraeber_09.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 14247,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/totengraeber_10.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 14746,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/totengraeber_11.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 14106,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/totengraeber_12.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 12627,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/totengraeber_13.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 12957,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/screenshots/totengraeber_14.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 14789,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/sidebar.jpg",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 13421,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/toten_header.png",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 11510,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "images/totengraeber.jpg",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 3954,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "index.html",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 8637,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "index.xml",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 25718,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "scripts/styleswitcher.min.d94b134e2f3a5f83017311f55e20d8c6cc44aaf5607642d03068c287e1ebac73.js",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 1559,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "sitemap.xml",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 3183,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "tags/index.html",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 3393,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "technique/bjrowan-map-tips/index.html",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 96982,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "technique/index.html",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 5413,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "updates/2007-06-22-site-launched/index.html",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 7684,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "updates/2007-06-23-desperate-times-call-for-desperate-measures/index.html",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 7396,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "updates/2012-04-29-desperate-measures-episode-2-released/index.html",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 8211,
+      "captured": "2026-11-10"
+    },
+    {
+      "path": "updates/index.html",
+      "origin": "wolf3d.bjrowan.com (live)",
+      "bytes": 5419,
+      "captured": "2026-11-10"
+    }
+  ],
+  "linksToLiveSite": {}
+}
