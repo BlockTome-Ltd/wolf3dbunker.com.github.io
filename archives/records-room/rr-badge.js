@@ -17,6 +17,6 @@
       : "Preserved copy of wolf3d.bjrowan.com, captured November 2026 &middot; " +
         '<a href="' + root + '2008-edition/index.html">2008 edition</a>') +
     ' &middot; <a href="https://wolf3d.bjrowan.com/" target="_blank" rel="noopener">Live site</a>' +
-    ' &middot; <a href="' + root + '../index.html">&larr; Back to Wolf3dBunker</a>';
+    ' &middot; <a href="' + root + '../../index.html">&larr; Back to Wolf3dBunker</a>';
   document.body.appendChild(b);
 })();

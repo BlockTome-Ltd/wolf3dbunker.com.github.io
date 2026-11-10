@@ -157,6 +157,6 @@
 
   var badge = document.createElement("div");
   badge.className = "bk-badge";
-  badge.innerHTML = 'Preserved copy of wolf3dbunker.com (2000&ndash;2003) &middot; <a href="' + ROOT + '../index.html">&larr; Back to Wolf3dBunker</a>';
+  badge.innerHTML = 'Preserved copy of wolf3dbunker.com (2000&ndash;2003) &middot; <a href="' + ROOT + '../../index.html">&larr; Back to Wolf3dBunker</a>';
   (document.body || document.documentElement).appendChild(badge);
 })();
