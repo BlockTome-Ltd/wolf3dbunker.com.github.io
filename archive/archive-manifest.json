@@ -1,10 +1,12 @@
 {
-  "generated": "2026-11-10T00:17:10.420Z",
+  "generated": "2026-11-10T18:37:03.611Z",
   "sources": [
     "https://web.archive.org/web/20031007201652/http://wolf3dbunker.com/",
     "https://web.archive.org/web/20030731181804/http://www.wolf3dbunker.com/",
     "Wayback captures of wolf3dbunker.com 2000-2003 and bjrowan.com/wolf3d/, /wolf3d_old/ 2000-2002",
-    "https://wolf3d.bjrowan.com/ (B.J. Rowan's current site) for files the Wayback Machine never captured"
+    "https://wolf3d.bjrowan.com/ (B.J. Rowan's current site) for files the Wayback Machine never captured",
+    "Wayback captures of www.games-guru.com/bunker/ (the site's 2002 interim host)",
+    "Wayback captures of areyep.com, wolfenvault.com and wolfenvault.areyep.com for downloads the Bunker linked to"
   ],
   "files": [
     {
@@ -26,7 +28,7 @@
       "origin": "wolf3dbunker.com",
       "captured": "20030802235151",
       "note": "",
-      "bytes": 26889
+      "bytes": 26869
     },
     {
       "path": "addons/add-wolf.htm",
@@ -127,6 +129,13 @@
       "bytes": 28901
     },
     {
+      "path": "files/tkopf.zip",
+      "origin": "wolfenvault.areyep.com",
+      "captured": "20251022202350",
+      "note": "Stand-in: Castle Totenkopf v1.2 by Wolf Skevos-Jones (Dec 2002), from the Wolfenstein 3D Vault (tkopfv12.zip); may be newer than the Bunker's copy",
+      "bytes": 1584776
+    },
+    {
       "path": "files/toten-developer.zip",
       "origin": "bjrowan.com/wolf3d",
       "captured": "20110929123019",
@@ -155,6 +164,27 @@
       "bytes": 9623
     },
     {
+      "path": "files/utils/maped72_hack.zip",
+      "origin": "wolfenvault.com",
+      "captured": "20190129162722",
+      "note": "Unofficial Mapedit 7.2 (K. van den Helm, 1999) that edits any game version, from http://wolfenvault.com/files/utilities/Mapedit72.zip",
+      "bytes": 87509
+    },
+    {
+      "path": "files/utils/wolfed21.zip",
+      "origin": "areyep.com",
+      "captured": "20060214102743",
+      "note": "WolfEdit 2.1 by Bill Kirby, from http://www.areyep.com/utilities/Wolfedit.zip (same program, different file name)",
+      "bytes": 26828
+    },
+    {
+      "path": "files/vgafiles.zip",
+      "origin": "wolfenvault.com",
+      "captured": "20190129191837",
+      "note": "VGA files for compiling the source, from http://wolfenvault.com/files/utilities/vgafiles.zip; closest match to the Bunker's listed 165 K, not verified identical",
+      "bytes": 169690
+    },
+    {
       "path": "files/wolf3dfaq.txt",
       "origin": "wolf3dbunker.com",
       "captured": "20030923200357",
@@ -162,11 +192,39 @@
       "bytes": 120153
     },
     {
+      "path": "files/wolfsrc.zip",
+      "origin": "areyep.com",
+      "captured": "20060223033606",
+      "note": "id Software's source release, from http://www.areyep.com/Codingtips/wolfsrc.zip; size matches the Bunker's listed 563 K",
+      "bytes": 576902
+    },
+    {
       "path": "gamedownload.htm",
       "origin": "bjrowan.com/wolf3d",
       "captured": "20021103122002",
       "note": "",
       "bytes": 3241
+    },
+    {
+      "path": "images/bjsketch-small.gif",
+      "origin": "games-guru.com/bunker",
+      "captured": "20021010070807",
+      "note": "original, from the Wayback capture of http://www.games-guru.com/bunker/images/bjsketch-small.gif",
+      "bytes": 10419
+    },
+    {
+      "path": "images/bottom_copyright.gif",
+      "origin": "games-guru.com/bunker",
+      "captured": "20021010031415",
+      "note": "original, from the Wayback capture of http://www.games-guru.com/bunker/images/bottom_copyright.gif",
+      "bytes": 2127
+    },
+    {
+      "path": "images/corner_bl.gif",
+      "origin": "games-guru.com/bunker",
+      "captured": "20021010031515",
+      "note": "original, from the Wayback capture of http://www.games-guru.com/bunker/images/corner_BL.gif",
+      "bytes": 318
     },
     {
       "path": "images/corner_br.gif",
@@ -190,6 +248,13 @@
       "bytes": 314
     },
     {
+      "path": "images/hits.gif",
+      "origin": "games-guru.com/bunker",
+      "captured": "20021010032008",
+      "note": "original, from the Wayback capture of http://www.games-guru.com/bunker/images/hits.gif",
+      "bytes": 940
+    },
+    {
       "path": "images/masthead.gif",
       "origin": "bjrowan.com/wolf3d",
       "captured": "20010817160006",
@@ -204,11 +269,25 @@
       "bytes": 43
     },
     {
+      "path": "images/pistol2.gif",
+      "origin": "games-guru.com/bunker",
+      "captured": "20021010032424",
+      "note": "original, from the Wayback capture of http://www.games-guru.com/bunker/images/pistol2.gif",
+      "bytes": 148
+    },
+    {
       "path": "images/pixel.gif",
       "origin": "bjrowan.com/wolf3d",
       "captured": "20010817163018",
       "note": "",
       "bytes": 43
+    },
+    {
+      "path": "images/shot_of_week.gif",
+      "origin": "games-guru.com/bunker",
+      "captured": "20021010032632",
+      "note": "original, from the Wayback capture of http://www.games-guru.com/bunker/images/shot_of_week.gif",
+      "bytes": 8684
     },
     {
       "path": "images/shots/toten01.png",
@@ -279,6 +358,13 @@
       "captured": "",
       "note": "1x1 transparent spacer, recreated",
       "bytes": 43
+    },
+    {
+      "path": "images/title_home.gif",
+      "origin": "games-guru.com/bunker",
+      "captured": "20021010032850",
+      "note": "original, from the Wayback capture of http://www.games-guru.com/bunker/images/title_home.gif",
+      "bytes": 1086
     },
     {
       "path": "images/title_news.gif",
@@ -358,11 +444,18 @@
       "bytes": 3165
     },
     {
+      "path": "reviews/images/title_reviews.gif",
+      "origin": "games-guru.com/bunker",
+      "captured": "20030208104815",
+      "note": "original, from the Wayback capture of http://www.games-guru.com/bunker/reviews/images/title_reviews.gif",
+      "bytes": 1361
+    },
+    {
       "path": "reviews/index.htm",
       "origin": "wolf3dbunker.com",
       "captured": "20031006052415",
       "note": "",
-      "bytes": 11803
+      "bytes": 11809
     },
     {
       "path": "scripts/bunker_menu.css",
@@ -418,7 +511,7 @@
       "origin": "bjrowan.com/wolf3d",
       "captured": "20001031165043",
       "note": "",
-      "bytes": 16714
+      "bytes": 16674
     },
     {
       "path": "splashimg/bjpic.jpg",
@@ -474,7 +567,7 @@
       "origin": "wolf3dbunker.com",
       "captured": "20030903203143",
       "note": "",
-      "bytes": 3387
+      "bytes": 3347
     },
     {
       "path": "toten.htm",
@@ -502,7 +595,7 @@
       "origin": "wolf3dbunker.com",
       "captured": "20030903203712",
       "note": "",
-      "bytes": 20850
+      "bytes": 20806
     },
     {
       "path": "w3dltips.htm",
@@ -698,28 +791,28 @@
       "origin": "bjrowan.com/wolf3d_old",
       "captured": "20020812174545",
       "note": "",
-      "bytes": 6433
+      "bytes": 6436
     },
     {
       "path": "wolf3d_old/navbar.html",
       "origin": "bjrowan.com/wolf3d_old",
       "captured": "20020602220338",
       "note": "",
-      "bytes": 6441
+      "bytes": 6444
     },
     {
       "path": "wolf3d_old/news.htm",
       "origin": "bjrowan.com/wolf3d_old",
       "captured": "20020812010505",
       "note": "",
-      "bytes": 20691
+      "bytes": 20715
     },
     {
       "path": "wolf3d_old/news.html",
       "origin": "bjrowan.com/wolf3d_old",
       "captured": "20020612165629",
       "note": "",
-      "bytes": 20702
+      "bytes": 20726
     },
     {
       "path": "wolf3d_old/scripts/dhtmllib.js",
@@ -740,28 +833,28 @@
       "origin": "bjrowan.com/wolf3d_old",
       "captured": "20020602220104",
       "note": "",
-      "bytes": 11350
+      "bytes": 11317
     },
     {
       "path": "wolf3d_old/setuptc.html",
       "origin": "bjrowan.com/wolf3d_old",
       "captured": "20020616141543",
       "note": "",
-      "bytes": 11358
+      "bytes": 11325
     },
     {
       "path": "wolf3d_old/source.htm",
       "origin": "bjrowan.com/wolf3d_old",
       "captured": "20020812010829",
       "note": "",
-      "bytes": 16683
+      "bytes": 16617
     },
     {
       "path": "wolf3d_old/source.html",
       "origin": "bjrowan.com/wolf3d_old",
       "captured": "20020612170028",
       "note": "",
-      "bytes": 16697
+      "bytes": 16631
     },
     {
       "path": "wolf3d_old/tips.htm",
@@ -796,84 +889,84 @@
       "origin": "bjrowan.com/wolf3d_old",
       "captured": "20020602215608",
       "note": "",
-      "bytes": 7584
+      "bytes": 7590
     },
     {
       "path": "wolf3d_old/toten2.html",
       "origin": "bjrowan.com/wolf3d_old",
       "captured": "20010516050603",
       "note": "",
-      "bytes": 7592
+      "bytes": 7598
     },
     {
       "path": "wolf3d_old/tut-ceil.htm",
       "origin": "bjrowan.com/wolf3d_old",
       "captured": "20020602220437",
       "note": "",
-      "bytes": 6882
+      "bytes": 6885
     },
     {
       "path": "wolf3d_old/tut-ceil.html",
       "origin": "bjrowan.com/wolf3d_old",
       "captured": "20020616142042",
       "note": "",
-      "bytes": 6891
+      "bytes": 6894
     },
     {
       "path": "wolf3d_old/tut-elev.htm",
       "origin": "bjrowan.com/wolf3d_old",
       "captured": "20020306140022",
       "note": "",
-      "bytes": 6443
+      "bytes": 6446
     },
     {
       "path": "wolf3d_old/tut-elev.html",
       "origin": "bjrowan.com/wolf3d_old",
       "captured": "20020616142138",
       "note": "",
-      "bytes": 6452
+      "bytes": 6455
     },
     {
       "path": "wolf3d_old/tut-keys.htm",
       "origin": "bjrowan.com/wolf3d_old",
       "captured": "20020812190630",
       "note": "",
-      "bytes": 22072
+      "bytes": 22075
     },
     {
       "path": "wolf3d_old/tut-keys.html",
       "origin": "bjrowan.com/wolf3d_old",
       "captured": "20010308212431",
       "note": "",
-      "bytes": 22081
+      "bytes": 22084
     },
     {
       "path": "wolf3d_old/tut-music.htm",
       "origin": "bjrowan.com/wolf3d_old",
       "captured": "20020602221228",
       "note": "",
-      "bytes": 6627
+      "bytes": 6630
     },
     {
       "path": "wolf3d_old/tut-music.html",
       "origin": "bjrowan.com/wolf3d_old",
       "captured": "20020616142011",
       "note": "",
-      "bytes": 6636
+      "bytes": 6639
     },
     {
       "path": "wolf3d_old/tut-seamless.htm",
       "origin": "bjrowan.com/wolf3d_old",
       "captured": "20020812190812",
       "note": "",
-      "bytes": 5144
+      "bytes": 5147
     },
     {
       "path": "wolf3d_old/tut-seamless.html",
       "origin": "bjrowan.com/wolf3d_old",
       "captured": "20020616142422",
       "note": "",
-      "bytes": 5153
+      "bytes": 5156
     },
     {
       "path": "wolf3d_old/w3dltips.htm",
@@ -894,14 +987,14 @@
       "origin": "bjrowan.com/wolf3d_old",
       "captured": "20020812174713",
       "note": "",
-      "bytes": 9763
+      "bytes": 9772
     },
     {
       "path": "wolf3d_old/welcome.html",
       "origin": "bjrowan.com/wolf3d_old",
       "captured": "20020502071751",
       "note": "",
-      "bytes": 9774
+      "bytes": 9783
     }
   ],
   "notArchived": {
@@ -965,22 +1058,13 @@
     "files/seamless.zip": [
       "tut-seamless.htm"
     ],
-    "files/tkopf.zip": [
-      "addons/add-tcs.htm"
-    ],
     "files/utils/maped42.zip": [
       "utilities.htm"
     ],
     "files/utils/maped70.zip": [
       "utilities.htm"
     ],
-    "files/utils/maped72_hack.zip": [
-      "utilities.htm"
-    ],
     "files/utils/wlfaud11.zip": [
-      "utilities.htm"
-    ],
-    "files/utils/wolfed21.zip": [
       "utilities.htm"
     ],
     "files/utils/wolfmap.zip": [
@@ -989,19 +1073,11 @@
     "files/utils/wolfsnd.zip": [
       "utilities.htm"
     ],
-    "files/vgafiles.zip": [
-      "source.htm",
-      "src-what.htm"
-    ],
     "files/w3dicons.zip": [
       "utilities.htm"
     ],
     "files/wolfobj.zip": [
       "source.htm"
-    ],
-    "files/wolfsrc.zip": [
-      "source.htm",
-      "src-what.htm"
     ],
     "images/about-0.gif": [
       "navbar.htm"
@@ -1028,51 +1104,8 @@
     "images/badshot2.gif": [
       "source.htm"
     ],
-    "images/bjsketch-small.gif": [
-      "welcome.htm"
-    ],
     "images/bkgbox.gif": [
       "navbar.htm",
-      "welcome.htm"
-    ],
-    "images/bottom_copyright.gif": [
-      "about.htm",
-      "addons/add-spear.htm",
-      "addons/add-tcs.htm",
-      "addons/add-wolf.htm",
-      "editorials/index.htm",
-      "gamedownload.htm",
-      "links.htm",
-      "news.htm",
-      "news/09-15-2002.htm",
-      "news/12-23-2000.htm",
-      "news/12202000.htm",
-      "projects.htm",
-      "revhistory.htm",
-      "src-what.htm",
-      "toten.htm",
-      "updates.htm",
-      "utilities.htm",
-      "welcome.htm"
-    ],
-    "images/corner_bl.gif": [
-      "about.htm",
-      "addons/add-spear.htm",
-      "addons/add-tcs.htm",
-      "addons/add-wolf.htm",
-      "editorials/index.htm",
-      "gamedownload.htm",
-      "links.htm",
-      "news.htm",
-      "news/09-15-2002.htm",
-      "news/12-23-2000.htm",
-      "news/12202000.htm",
-      "projects.htm",
-      "revhistory.htm",
-      "src-what.htm",
-      "toten.htm",
-      "updates.htm",
-      "utilities.htm",
       "welcome.htm"
     ],
     "images/design-0.gif": [
@@ -1080,10 +1113,6 @@
     ],
     "images/design-1.gif": [
       "navbar.htm"
-    ],
-    "images/hits.gif": [
-      "navbar.htm",
-      "welcome.htm"
     ],
     "images/leftedge_tile.gif": [
       "about.htm",
@@ -1129,19 +1158,6 @@
     "images/papertop.gif": [
       "toten.htm"
     ],
-    "images/pistol2.gif": [
-      "addons/add-spear.htm",
-      "addons/add-tcs.htm",
-      "addons/add-wolf.htm",
-      "links.htm",
-      "news.htm",
-      "news/09-15-2002.htm",
-      "news/12-23-2000.htm",
-      "news/12202000.htm",
-      "toten.htm",
-      "tut-seamless.htm",
-      "welcome.htm"
-    ],
     "images/project-0.gif": [
       "navbar.htm"
     ],
@@ -1167,9 +1183,6 @@
       "toten.htm",
       "updates.htm",
       "utilities.htm",
-      "welcome.htm"
-    ],
-    "images/shot_of_week.gif": [
       "welcome.htm"
     ],
     "images/shot_of_week_big.gif": [
@@ -1216,9 +1229,6 @@
     "images/title_games.gif": [
       "gamedownload.htm"
     ],
-    "images/title_home.gif": [
-      "welcome.htm"
-    ],
     "images/title_links.gif": [
       "links.htm"
     ],
@@ -1253,16 +1263,7 @@
       "news/12-23-2000.htm",
       "news/12202000.htm"
     ],
-    "reviews/images/bottom_copyright.gif": [
-      "reviews/index.htm"
-    ],
-    "reviews/images/corner_bl.gif": [
-      "reviews/index.htm"
-    ],
     "reviews/images/leftedge_tile.gif": [
-      "reviews/index.htm"
-    ],
-    "reviews/images/title_reviews.gif": [
       "reviews/index.htm"
     ],
     "reviews/src-chron.htm": [
@@ -1331,12 +1332,6 @@
       "wolf3d_old/tut-seamless.htm",
       "wolf3d_old/tut-seamless.html"
     ],
-    "wolf3d_old/files/vgafiles.zip": [
-      "wolf3d_old/setuptc.htm",
-      "wolf3d_old/setuptc.html",
-      "wolf3d_old/source.htm",
-      "wolf3d_old/source.html"
-    ],
     "wolf3d_old/files/w3dicons.zip": [
       "wolf3d_old/addons.htm",
       "wolf3d_old/addons.html"
@@ -1356,10 +1351,6 @@
     "wolf3d_old/files/wolfsnd.zip": [
       "wolf3d_old/addons.htm",
       "wolf3d_old/addons.html"
-    ],
-    "wolf3d_old/files/wolfsrc.zip": [
-      "wolf3d_old/source.htm",
-      "wolf3d_old/source.html"
     ],
     "wolf3d_old/images/about-0.gif": [
       "wolf3d_old/navbar.htm",
@@ -1408,10 +1399,6 @@
     "wolf3d_old/images/hideout.gif": [
       "wolf3d_old/links.htm",
       "wolf3d_old/links.html"
-    ],
-    "wolf3d_old/images/hits.gif": [
-      "wolf3d_old/navbar.htm",
-      "wolf3d_old/navbar.html"
     ],
     "wolf3d_old/images/honorsmall.gif": [
       "wolf3d_old/welcome.htm",
@@ -1528,24 +1515,6 @@
     "wolf3d_old/images/phase2-news.gif": [
       "wolf3d_old/news.htm",
       "wolf3d_old/news.html"
-    ],
-    "wolf3d_old/images/pistol2.gif": [
-      "wolf3d_old/news.htm",
-      "wolf3d_old/news.html",
-      "wolf3d_old/toten2.htm",
-      "wolf3d_old/toten2.html",
-      "wolf3d_old/tut-ceil.htm",
-      "wolf3d_old/tut-ceil.html",
-      "wolf3d_old/tut-elev.htm",
-      "wolf3d_old/tut-elev.html",
-      "wolf3d_old/tut-keys.htm",
-      "wolf3d_old/tut-keys.html",
-      "wolf3d_old/tut-music.htm",
-      "wolf3d_old/tut-music.html",
-      "wolf3d_old/tut-seamless.htm",
-      "wolf3d_old/tut-seamless.html",
-      "wolf3d_old/welcome.htm",
-      "wolf3d_old/welcome.html"
     ],
     "wolf3d_old/images/project-0.gif": [
       "wolf3d_old/navbar.htm",

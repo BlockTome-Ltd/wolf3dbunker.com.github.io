@@ -102,10 +102,35 @@ body {
 }
 @keyframes blink { to { visibility: hidden; } }
 
-.grid {
+.section {
   max-width: 1180px;
   margin: 0 auto;
   padding: 0 16px 48px;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 0 0 22px;
+  font-family: "Wolfenstein", "Impact", sans-serif;
+  font-weight: normal;
+  font-size: clamp(2rem, 6vw, 3.2rem);
+  line-height: 1;
+  letter-spacing: .03em;
+  color: var(--gold);
+  text-shadow: 2px 2px 0 #600000, 4px 4px 0 #000;
+}
+.section-title::before,
+.section-title::after {
+  content: "";
+  flex: 1;
+  height: 4px;
+  background: var(--edge-light);
+  box-shadow: 0 3px 0 var(--edge-dark);
+}
+
+.grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr));
   gap: 20px;
@@ -154,11 +179,19 @@ body {
   transition: opacity .35s linear;
 }
 .thumb img.on { opacity: 1; }
+.thumb--banner img:first-child { object-fit: contain; padding: 0 6px; }
+.thumb--banner::before {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  background: var(--backdrop, none) center / cover;
+  filter: blur(4px) brightness(.4);
+}
 .thumb img[src*="sod-demo-1"] { object-position: 50% 12%; }
 .thumb img[src*="wolfram-1"] { object-position: 50% 0; }
 .tile:not(:hover):not(:focus-visible) .thumb img { filter: saturate(.85) brightness(.9); }
 
-.tile h2 {
+.tile h3 {
   margin: 10px 0 8px;
   color: var(--text-hi);
   font-weight: normal;
@@ -166,7 +199,7 @@ body {
   line-height: 1.05;
   text-transform: uppercase;
 }
-.tile:hover h2, .tile:focus-visible h2 { color: var(--gold); }
+.tile:hover h3, .tile:focus-visible h3 { color: var(--gold); }
 
 .tile p { margin: 0 0 16px; flex: 1; }
 
@@ -188,10 +221,27 @@ body {
 }
 .cta::before { content: "\25B6\00a0"; }
 
+.site-link {
+  position: fixed;
+  right: 12px;
+  bottom: 12px;
+  z-index: 10;
+  padding: 4px 10px;
+  border: 2px solid var(--edge-light);
+  border-right-color: var(--edge-dark);
+  border-bottom-color: var(--edge-dark);
+  background: var(--panel);
+  color: var(--gold);
+  font-size: 1.1rem;
+  letter-spacing: .05em;
+  text-decoration: none;
+}
+.site-link:hover, .site-link:focus-visible { background: var(--panel-hi); color: var(--text-hi); outline: none; }
+
 .footer {
   max-width: 900px;
   margin: 0 auto;
-  padding: 0 16px 32px;
+  padding: 0 16px 64px;
   text-align: center;
   font-size: 1rem;
   color: #a06060;
