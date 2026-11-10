@@ -1,9 +1,10 @@
 {
-  "generated": "2026-11-09T20:49:28.050Z",
+  "generated": "2026-11-10T00:17:10.420Z",
   "sources": [
     "https://web.archive.org/web/20031007201652/http://wolf3dbunker.com/",
     "https://web.archive.org/web/20030731181804/http://www.wolf3dbunker.com/",
-    "Wayback captures of wolf3dbunker.com 2000-2003 and bjrowan.com/wolf3d/, /wolf3d_old/ 2000-2002"
+    "Wayback captures of wolf3dbunker.com 2000-2003 and bjrowan.com/wolf3d/, /wolf3d_old/ 2000-2002",
+    "https://wolf3d.bjrowan.com/ (B.J. Rowan's current site) for files the Wayback Machine never captured"
   ],
   "files": [
     {
@@ -105,6 +106,13 @@
       "bytes": 804372
     },
     {
+      "path": "files/maped84.zip",
+      "origin": "wolf3d.bjrowan.com",
+      "captured": "20261109",
+      "note": "MapEdit 8.4, from https://wolf3d.bjrowan.com/files/maped84.zip",
+      "bytes": 326151
+    },
+    {
       "path": "files/overkill.zip",
       "origin": "wolf3dbunker.com",
       "captured": "20000605144434",
@@ -138,6 +146,13 @@
       "captured": "20110929123904",
       "note": "",
       "bytes": 1328610
+    },
+    {
+      "path": "files/tppatch.zip",
+      "origin": "wolf3d.bjrowan.com",
+      "captured": "20261109",
+      "note": "MapEdit runtime error 200 patch, from https://wolf3d.bjrowan.com/files/tppatch.zip",
+      "bytes": 9623
     },
     {
       "path": "files/wolf3dfaq.txt",
@@ -194,6 +209,69 @@
       "captured": "20010817163018",
       "note": "",
       "bytes": 43
+    },
+    {
+      "path": "images/shots/toten01.png",
+      "origin": "wolf3d.bjrowan.com",
+      "captured": "20261109",
+      "note": "Stand-in: the original screenshot was never archived. Project Totengraeber screenshot from https://wolf3d.bjrowan.com/images/screenshots/totengraeber_01.png, center-cropped to the page's 180x131 frame",
+      "bytes": 14732
+    },
+    {
+      "path": "images/shots/toten02.png",
+      "origin": "wolf3d.bjrowan.com",
+      "captured": "20261109",
+      "note": "Stand-in: the original screenshot was never archived. Project Totengraeber screenshot from https://wolf3d.bjrowan.com/images/screenshots/totengraeber_02.png, center-cropped to the page's 180x131 frame",
+      "bytes": 14366
+    },
+    {
+      "path": "images/shots/toten03.png",
+      "origin": "wolf3d.bjrowan.com",
+      "captured": "20261109",
+      "note": "Stand-in: the original screenshot was never archived. Project Totengraeber screenshot from https://wolf3d.bjrowan.com/images/screenshots/totengraeber_03.png, center-cropped to the page's 180x131 frame",
+      "bytes": 16198
+    },
+    {
+      "path": "images/shots/toten04.png",
+      "origin": "wolf3d.bjrowan.com",
+      "captured": "20261109",
+      "note": "Stand-in: the original screenshot was never archived. Project Totengraeber screenshot from https://wolf3d.bjrowan.com/images/screenshots/totengraeber_04.png, center-cropped to the page's 180x131 frame",
+      "bytes": 18523
+    },
+    {
+      "path": "images/shots/toten05.png",
+      "origin": "wolf3d.bjrowan.com",
+      "captured": "20261109",
+      "note": "Stand-in: the original screenshot was never archived. Project Totengraeber screenshot from https://wolf3d.bjrowan.com/images/screenshots/totengraeber_05.png, center-cropped to the page's 180x131 frame",
+      "bytes": 19755
+    },
+    {
+      "path": "images/shots/toten06.png",
+      "origin": "wolf3d.bjrowan.com",
+      "captured": "20261109",
+      "note": "Stand-in: the original screenshot was never archived. Project Totengraeber screenshot from https://wolf3d.bjrowan.com/images/screenshots/totengraeber_06.png, center-cropped to the page's 180x131 frame",
+      "bytes": 17298
+    },
+    {
+      "path": "images/shots/toten07.png",
+      "origin": "wolf3d.bjrowan.com",
+      "captured": "20261109",
+      "note": "Stand-in: the original screenshot was never archived. Project Totengraeber screenshot from https://wolf3d.bjrowan.com/images/screenshots/totengraeber_07.png, center-cropped to the page's 180x131 frame",
+      "bytes": 16267
+    },
+    {
+      "path": "images/shots/toten08.png",
+      "origin": "wolf3d.bjrowan.com",
+      "captured": "20261109",
+      "note": "Stand-in: the original screenshot was never archived. Project Totengraeber screenshot from https://wolf3d.bjrowan.com/images/screenshots/totengraeber_08.png, center-cropped to the page's 180x131 frame",
+      "bytes": 16948
+    },
+    {
+      "path": "images/shots/toten09.png",
+      "origin": "wolf3d.bjrowan.com",
+      "captured": "20261109",
+      "note": "Stand-in: the original screenshot was never archived. Project Totengraeber screenshot from https://wolf3d.bjrowan.com/images/screenshots/totengraeber_09.png, center-cropped to the page's 180x131 frame",
+      "bytes": 18744
     },
     {
       "path": "images/spacer.gif",
@@ -424,14 +502,14 @@
       "origin": "wolf3dbunker.com",
       "captured": "20030903203712",
       "note": "",
-      "bytes": 20906
+      "bytes": 20850
     },
     {
       "path": "w3dltips.htm",
       "origin": "wolf3dbunker.com",
       "captured": "20030903203313",
       "note": "",
-      "bytes": 119653
+      "bytes": 119613
     },
     {
       "path": "welcome.htm",
@@ -459,14 +537,14 @@
       "origin": "bjrowan.com/wolf3d_old",
       "captured": "20020812005933",
       "note": "",
-      "bytes": 50664
+      "bytes": 50598
     },
     {
       "path": "wolf3d_old/addons.html",
       "origin": "bjrowan.com/wolf3d_old",
       "captured": "20010516044535",
       "note": "",
-      "bytes": 50673
+      "bytes": 50607
     },
     {
       "path": "wolf3d_old/files/maptips.txt",
@@ -530,6 +608,69 @@
       "captured": "20020602175059",
       "note": "",
       "bytes": 1906
+    },
+    {
+      "path": "wolf3d_old/images/w3dltips/image1.png",
+      "origin": "wolf3d.bjrowan.com",
+      "captured": "20261109",
+      "note": "Level design tips diagram, PNG re-save of the original GIF, from https://wolf3d.bjrowan.com/images/maptips/image1.png",
+      "bytes": 173
+    },
+    {
+      "path": "wolf3d_old/images/w3dltips/image2.png",
+      "origin": "wolf3d.bjrowan.com",
+      "captured": "20261109",
+      "note": "Level design tips diagram, PNG re-save of the original GIF, from https://wolf3d.bjrowan.com/images/maptips/image2.png",
+      "bytes": 1442
+    },
+    {
+      "path": "wolf3d_old/images/w3dltips/image3.png",
+      "origin": "wolf3d.bjrowan.com",
+      "captured": "20261109",
+      "note": "Level design tips diagram, PNG re-save of the original GIF, from https://wolf3d.bjrowan.com/images/maptips/image3.png",
+      "bytes": 947
+    },
+    {
+      "path": "wolf3d_old/images/w3dltips/image4.png",
+      "origin": "wolf3d.bjrowan.com",
+      "captured": "20261109",
+      "note": "Level design tips diagram, PNG re-save of the original GIF, from https://wolf3d.bjrowan.com/images/maptips/image4.png",
+      "bytes": 1326
+    },
+    {
+      "path": "wolf3d_old/images/w3dltips/image5.png",
+      "origin": "wolf3d.bjrowan.com",
+      "captured": "20261109",
+      "note": "Level design tips diagram, PNG re-save of the original GIF, from https://wolf3d.bjrowan.com/images/maptips/image5.png",
+      "bytes": 874
+    },
+    {
+      "path": "wolf3d_old/images/w3dltips/image6.png",
+      "origin": "wolf3d.bjrowan.com",
+      "captured": "20261109",
+      "note": "Level design tips diagram, PNG re-save of the original GIF, from https://wolf3d.bjrowan.com/images/maptips/image6.png",
+      "bytes": 1332
+    },
+    {
+      "path": "wolf3d_old/images/w3dltips/image7.png",
+      "origin": "wolf3d.bjrowan.com",
+      "captured": "20261109",
+      "note": "Level design tips diagram, PNG re-save of the original GIF, from https://wolf3d.bjrowan.com/images/maptips/image7.png",
+      "bytes": 920
+    },
+    {
+      "path": "wolf3d_old/images/w3dltips/image8.png",
+      "origin": "wolf3d.bjrowan.com",
+      "captured": "20261109",
+      "note": "Level design tips diagram, PNG re-save of the original GIF, from https://wolf3d.bjrowan.com/images/maptips/image8.png",
+      "bytes": 192
+    },
+    {
+      "path": "wolf3d_old/images/w3dltips/image9.png",
+      "origin": "wolf3d.bjrowan.com",
+      "captured": "20261109",
+      "note": "Level design tips diagram, PNG re-save of the original GIF, from https://wolf3d.bjrowan.com/images/maptips/image9.png",
+      "bytes": 223
     },
     {
       "path": "wolf3d_old/index.html",
@@ -739,14 +880,14 @@
       "origin": "bjrowan.com/wolf3d_old",
       "captured": "20020812191951",
       "note": "",
-      "bytes": 119006
+      "bytes": 118966
     },
     {
       "path": "wolf3d_old/w3dltips.html",
       "origin": "bjrowan.com/wolf3d_old",
       "captured": "20020616140840",
       "note": "",
-      "bytes": 119007
+      "bytes": 118967
     },
     {
       "path": "wolf3d_old/welcome.htm",
@@ -821,21 +962,11 @@
     "files/bc31.zip": [
       "src-what.htm"
     ],
-    "files/maped84.zip": [
-      "w3dltips.htm",
-      "wolf3d_old/w3dltips.htm",
-      "wolf3d_old/w3dltips.html"
-    ],
     "files/seamless.zip": [
       "tut-seamless.htm"
     ],
     "files/tkopf.zip": [
       "addons/add-tcs.htm"
-    ],
-    "files/tppatch.zip": [
-      "w3dltips.htm",
-      "wolf3d_old/w3dltips.htm",
-      "wolf3d_old/w3dltips.html"
     ],
     "files/utils/maped42.zip": [
       "utilities.htm"
@@ -844,12 +975,6 @@
       "utilities.htm"
     ],
     "files/utils/maped72_hack.zip": [
-      "utilities.htm"
-    ],
-    "files/utils/maped84.zip": [
-      "utilities.htm"
-    ],
-    "files/utils/tppatch.zip": [
       "utilities.htm"
     ],
     "files/utils/wlfaud11.zip": [
@@ -1050,33 +1175,6 @@
     "images/shot_of_week_big.gif": [
       "welcome.htm"
     ],
-    "images/shots/toten01.gif": [
-      "toten.htm"
-    ],
-    "images/shots/toten02.gif": [
-      "toten.htm"
-    ],
-    "images/shots/toten03.gif": [
-      "toten.htm"
-    ],
-    "images/shots/toten04.gif": [
-      "toten.htm"
-    ],
-    "images/shots/toten05.gif": [
-      "toten.htm"
-    ],
-    "images/shots/toten06.gif": [
-      "toten.htm"
-    ],
-    "images/shots/toten07.gif": [
-      "toten.htm"
-    ],
-    "images/shots/toten08.gif": [
-      "toten.htm"
-    ],
-    "images/shots/toten09.gif": [
-      "toten.htm"
-    ],
     "images/source-0.gif": [
       "navbar.htm"
     ],
@@ -1149,33 +1247,6 @@
     ],
     "images/wolfnow1.gif": [
       "navbar.htm"
-    ],
-    "old_backup/images/w3dltips/image1.gif": [
-      "w3dltips.htm"
-    ],
-    "old_backup/images/w3dltips/image2.gif": [
-      "w3dltips.htm"
-    ],
-    "old_backup/images/w3dltips/image3.gif": [
-      "w3dltips.htm"
-    ],
-    "old_backup/images/w3dltips/image4.gif": [
-      "w3dltips.htm"
-    ],
-    "old_backup/images/w3dltips/image5.gif": [
-      "w3dltips.htm"
-    ],
-    "old_backup/images/w3dltips/image6.gif": [
-      "w3dltips.htm"
-    ],
-    "old_backup/images/w3dltips/image7.gif": [
-      "w3dltips.htm"
-    ],
-    "old_backup/images/w3dltips/image8.gif": [
-      "w3dltips.htm"
-    ],
-    "old_backup/images/w3dltips/image9.gif": [
-      "w3dltips.htm"
     ],
     "pt2-news.htm": [
       "news/09-15-2002.htm",
@@ -1250,10 +1321,6 @@
       "wolf3d_old/addons.htm",
       "wolf3d_old/addons.html"
     ],
-    "wolf3d_old/files/maped84.zip": [
-      "wolf3d_old/addons.htm",
-      "wolf3d_old/addons.html"
-    ],
     "wolf3d_old/files/pt101up.zip": [
       "wolf3d_old/news.htm",
       "wolf3d_old/news.html",
@@ -1263,10 +1330,6 @@
     "wolf3d_old/files/seamless.zip": [
       "wolf3d_old/tut-seamless.htm",
       "wolf3d_old/tut-seamless.html"
-    ],
-    "wolf3d_old/files/tppatch.zip": [
-      "wolf3d_old/addons.htm",
-      "wolf3d_old/addons.html"
     ],
     "wolf3d_old/files/vgafiles.zip": [
       "wolf3d_old/setuptc.htm",
@@ -1677,42 +1740,6 @@
     "wolf3d_old/images/w2dshot2.jpg": [
       "wolf3d_old/about.htm",
       "wolf3d_old/about.html"
-    ],
-    "wolf3d_old/images/w3dltips/image1.gif": [
-      "wolf3d_old/w3dltips.htm",
-      "wolf3d_old/w3dltips.html"
-    ],
-    "wolf3d_old/images/w3dltips/image2.gif": [
-      "wolf3d_old/w3dltips.htm",
-      "wolf3d_old/w3dltips.html"
-    ],
-    "wolf3d_old/images/w3dltips/image3.gif": [
-      "wolf3d_old/w3dltips.htm",
-      "wolf3d_old/w3dltips.html"
-    ],
-    "wolf3d_old/images/w3dltips/image4.gif": [
-      "wolf3d_old/w3dltips.htm",
-      "wolf3d_old/w3dltips.html"
-    ],
-    "wolf3d_old/images/w3dltips/image5.gif": [
-      "wolf3d_old/w3dltips.htm",
-      "wolf3d_old/w3dltips.html"
-    ],
-    "wolf3d_old/images/w3dltips/image6.gif": [
-      "wolf3d_old/w3dltips.htm",
-      "wolf3d_old/w3dltips.html"
-    ],
-    "wolf3d_old/images/w3dltips/image7.gif": [
-      "wolf3d_old/w3dltips.htm",
-      "wolf3d_old/w3dltips.html"
-    ],
-    "wolf3d_old/images/w3dltips/image8.gif": [
-      "wolf3d_old/w3dltips.htm",
-      "wolf3d_old/w3dltips.html"
-    ],
-    "wolf3d_old/images/w3dltips/image9.gif": [
-      "wolf3d_old/w3dltips.htm",
-      "wolf3d_old/w3dltips.html"
     ],
     "wolf3d_old/images/welcome-0.gif": [
       "wolf3d_old/navbar.htm",
