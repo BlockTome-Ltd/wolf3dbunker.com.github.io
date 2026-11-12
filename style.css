@@ -135,6 +135,9 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr));
   gap: 20px;
 }
+.section--featured .grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+}
 
 .tile {
   position: relative;
